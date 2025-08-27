@@ -139,11 +139,16 @@
                     </div>
                 </div>
                 
-                <div class="text-center mb-4">
-                    <button class="btn btn-refresh btn-lg text-white" onclick="refreshPrices()">
-                        🔄 즉시 업데이트
-                    </button>
-                </div>
+                                    <div class="text-center mb-4">
+                        <button class="btn btn-refresh btn-lg text-white" onclick="refreshPrices()">
+                            🔄 즉시 업데이트
+                        </button>
+                        
+                        <!-- 테스트 전화 버튼 -->
+                        <button class="btn btn-danger btn-lg ms-3" onclick="testPhoneCall()">
+                            📞 전화 테스트
+                        </button>
+                    </div>
                 
                                     <div class="text-center mt-4">
                         <div class="row">
@@ -197,6 +202,12 @@
             function makePhoneCall(phoneNumber) {
                 // 전화 앱 열기
                 window.location.href = `tel:${phoneNumber}`;
+            }
+            
+            function testPhoneCall() {
+                if (confirm('010-3317-4920으로 테스트 전화를 걸까요?')) {
+                    makePhoneCall('010-3317-4920');
+                }
             }
             
             function showAlert(message, isUrgent = false) {
