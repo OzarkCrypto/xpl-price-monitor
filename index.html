@@ -5,15 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XPL 가격 모니터</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; }
-        .card { border: none; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
-        .price-card { background: linear-gradient(45deg, #ff6b6b, #ee5a24); color: white; }
-        .price-card.hyperliquid { background: linear-gradient(45deg, #4834d4, #686de0); }
-        .gap-card { background: linear-gradient(45deg, #00b894, #00cec9); color: white; }
-        .btn-refresh { background: linear-gradient(45deg, #6c5ce7, #a29bfe); border: none; }
-        .last-update { color: #636e72; font-size: 0.9rem; }
-    </style>
+            <style>
+            body { 
+                background: #000000; 
+                min-height: 100vh; 
+                color: #ffffff;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .card { 
+                border: 1px solid #333333; 
+                border-radius: 12px; 
+                background: #111111;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+                transition: all 0.3s ease;
+            }
+            .card:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 8px 25px rgba(0,0,0,0.7);
+            }
+            .price-card { 
+                background: #1a1a1a; 
+                color: #ffffff; 
+                border: 1px solid #444444;
+            }
+            .price-card.hyperliquid { 
+                background: #1a1a1a; 
+                color: #ffffff;
+                border: 1px solid #444444;
+            }
+            .gap-card { 
+                background: #1a1a1a; 
+                color: #ffffff;
+                border: 1px solid #444444;
+            }
+            .btn-refresh { 
+                background: #333333; 
+                border: 1px solid #555555;
+                color: #ffffff;
+                transition: all 0.3s ease;
+            }
+            .btn-refresh:hover {
+                background: #444444;
+                border-color: #666666;
+                transform: translateY(-1px);
+            }
+            .last-update { 
+                color: #888888; 
+                font-size: 0.9rem; 
+            }
+            .display-6 {
+                color: #00ff88;
+                font-weight: 600;
+                text-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+            }
+            .card-title {
+                color: #cccccc;
+                font-weight: 500;
+            }
+            .btn-outline-light {
+                border-color: #666666;
+                color: #cccccc;
+            }
+            .btn-outline-light:hover {
+                background: #333333;
+                border-color: #888888;
+                color: #ffffff;
+            }
+            .text-muted {
+                color: #888888 !important;
+            }
+        </style>
 </head>
 <body>
     <div class="container py-5">
