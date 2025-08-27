@@ -1,0 +1,34 @@
+Index,Name,Type,Description,Status,Source
+1,Binance,Exchange,세계 최대 암호화폐 거래소,Active,known_list
+2,Coinbase,Exchange,미국 최대 암호화폐 거래소,Active,known_list
+3,Kraken,Exchange,유럽 주요 암호화폐 거래소,Active,known_list
+4,Bitfinex,Exchange,유럽 기반 암호화폐 거래소,Active,known_list
+5,OKX,Exchange,아시아 주요 암호화폐 거래소,Active,known_list
+6,Bybit,Exchange,아시아 기반 암호화폐 거래소,Active,known_list
+7,KuCoin,Exchange,글로벌 암호화폐 거래소,Active,known_list
+8,Gate.io,Exchange,글로벌 암호화폐 거래소,Active,known_list
+9,Huobi,Exchange,아시아 기반 암호화폐 거래소,Active,known_list
+10,Bitstamp,Exchange,유럽 기반 암호화폐 거래소,Active,known_list
+11,Jump Trading,Market Maker,글로벌 알고리즘 트레이딩 회사,Active,known_list
+12,Alameda Research,Market Maker,암호화폐 시장메이커,Inactive,known_list
+13,Wintermute,Market Maker,글로벌 알고리즘 트레이딩 회사,Active,known_list
+14,GTS,Market Maker,글로벌 시장메이커,Active,known_list
+15,Virtu Financial,Market Maker,글로벌 시장메이커,Active,known_list
+16,Citadel Securities,Market Maker,글로벌 시장메이커,Active,known_list
+17,DRW,Market Maker,글로벌 시장메이커,Active,known_list
+18,Optiver,Market Maker,글로벌 시장메이커,Active,known_list
+19,Flow Traders,Market Maker,유럽 기반 시장메이커,Active,known_list
+20,XTX Markets,Market Maker,글로벌 알고리즘 트레이딩 회사,Active,known_list
+21,Goldman Sachs,Institutional,글로벌 투자은행,Active,known_list
+22,JPMorgan Chase,Institutional,글로벌 투자은행,Active,known_list
+23,Morgan Stanley,Institutional,글로벌 투자은행,Active,known_list
+24,Barclays,Institutional,영국 투자은행,Active,known_list
+25,Deutsche Bank,Institutional,독일 투자은행,Active,known_list
+26,UBS,Institutional,스위스 투자은행,Active,known_list
+27,Credit Suisse,Institutional,스위스 투자은행,Active,known_list
+28,Nomura,Institutional,일본 투자은행,Active,known_list
+29,Mizuho,Institutional,일본 투자은행,Active,known_list
+30,Sumitomo Mitsui,Institutional,일본 투자은행,Active,known_list
+31,biggest,Unknown,Found in https://pyth.network/,Active,documentation
+32,Decentralized spot and perpetuals,Unknown,Found in https://pyth.network/,Active,documentation
+33,s Rays,Unknown,Found in https://pyth.network/,Active,documentation

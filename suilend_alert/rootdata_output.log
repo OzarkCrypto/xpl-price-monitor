@@ -1,0 +1,46 @@
+/Users/chasanghun/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+2025-08-22 11:21:20,898 - INFO - 총 2개 채널에 메시지 전송
+2025-08-22 11:21:20,898 - INFO - 채널 목록: 메인 + 추가채널
+2025-08-22 11:21:20,899 - INFO - 이전 데이터 로드 완료: 10개 프로젝트
+2025-08-22 11:21:20,899 - INFO - Rootdata Hot Index 모니터가 초기화되었습니다.
+2025-08-22 11:21:20,899 - INFO - Hot index 모니터링 스케줄러를 시작합니다...
+2025-08-22 11:21:20,899 - INFO - Hot index 모니터링 시작...
+2025-08-22 11:21:20,899 - INFO - Rootdata hot index 데이터를 가져오는 중...
+2025-08-22 11:21:22,374 - INFO - HTML 테이블과 JavaScript 데이터를 조합하여 hot index 정보를 찾는 중...
+2025-08-22 11:21:22,383 - INFO - JavaScript에서 24개의 hot index 값을 찾았습니다.
+2025-08-22 11:21:22,383 - INFO - 테이블과 JavaScript 데이터를 조합하여 총 24개의 hot index 데이터를 파싱했습니다.
+2025-08-22 11:21:22,383 - INFO - 상위 5개 프로젝트:
+2025-08-22 11:21:22,383 - INFO -   1. Sapien - Hot Index: 385.0
+2025-08-22 11:21:22,383 - INFO -   2. Aria - Hot Index: 380.0
+2025-08-22 11:21:22,383 - INFO -   3. AKEDO’s first Telegram game al... - Hot Index: 377.0
+2025-08-22 11:21:22,383 - INFO -   4. XPIN Network - Hot Index: 374.0
+2025-08-22 11:21:22,383 - INFO -   5. Warden Protocol - Hot Index: 356.0
+2025-08-22 11:21:22,383 - INFO - 총 24개의 hot index 데이터를 가져왔습니다.
+2025-08-22 11:21:23,805 - INFO - 텔레그램 메시지 전송 성공 (Chat ID: 1339285013)
+2025-08-22 11:21:25,071 - INFO - 텔레그램 메시지 전송 성공 (Chat ID: -4961025651)
+2025-08-22 11:21:25,071 - INFO - 모든 채널(2개)에 메시지 전송 완료
+2025-08-22 11:21:25,074 - INFO - 현재 데이터 저장 완료: 10개 프로젝트
+2025-08-22 11:21:25,074 - INFO - Hot index TOP 10 모니터링 완료
+2025-08-22 11:21:25,074 - INFO - 스케줄이 설정되었습니다: 매시간 정각 (00:00 ~ 23:00)
+2025-08-22 12:00:25,364 - INFO - Hot index 모니터링 시작...
+2025-08-22 12:00:25,384 - INFO - Rootdata hot index 데이터를 가져오는 중...
+2025-08-22 12:00:27,075 - INFO - HTML 테이블과 JavaScript 데이터를 조합하여 hot index 정보를 찾는 중...
+2025-08-22 12:00:27,080 - INFO - JavaScript에서 24개의 hot index 값을 찾았습니다.
+2025-08-22 12:00:27,080 - INFO - 테이블과 JavaScript 데이터를 조합하여 총 24개의 hot index 데이터를 파싱했습니다.
+2025-08-22 12:00:27,080 - INFO - 상위 5개 프로젝트:
+2025-08-22 12:00:27,080 - INFO -   1. Sapien - Hot Index: 385.0
+2025-08-22 12:00:27,080 - INFO -   2. Aria - Hot Index: 380.0
+2025-08-22 12:00:27,080 - INFO -   3. AKEDO’s first Telegram game al... - Hot Index: 377.0
+2025-08-22 12:00:27,080 - INFO -   4. XPIN Network - Hot Index: 374.0
+2025-08-22 12:00:27,081 - INFO -   5. Warden Protocol - Hot Index: 356.0
+2025-08-22 12:00:27,081 - INFO - 총 24개의 hot index 데이터를 가져왔습니다.
+2025-08-22 12:00:28,458 - INFO - 텔레그램 메시지 전송 성공 (Chat ID: 1339285013)
+2025-08-22 12:00:29,682 - INFO - 텔레그램 메시지 전송 성공 (Chat ID: -4961025651)
+2025-08-22 12:00:29,682 - INFO - 모든 채널(2개)에 메시지 전송 완료
+2025-08-22 12:00:29,686 - INFO - 현재 데이터 저장 완료: 10개 프로젝트
+2025-08-22 12:00:29,686 - INFO - Hot index TOP 10 모니터링 완료
+2025-08-22 13:00:30,344 - INFO - Hot index 모니터링 시작...
+2025-08-22 13:00:30,356 - INFO - Rootdata hot index 데이터를 가져오는 중...
+2025-08-22 13:00:30,698 - ERROR - HTTP 요청 오류: 500 Server Error: Internal Server Error for url: https://www.rootdata.com/
+2025-08-22 13:00:30,698 - WARNING - Hot index 데이터가 없습니다.

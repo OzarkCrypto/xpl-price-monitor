@@ -1,0 +1,131 @@
+2025-08-25 17:46:24,982 - INFO - 환경 변수 파일 경로: /Users/chasanghun/practice/suilend_alert/.env
+2025-08-25 17:46:24,982 - INFO - 환경 변수 파일 존재: True
+2025-08-25 17:46:24,982 - INFO - 환경 변수 로딩 중...
+2025-08-25 17:46:24,982 - INFO - ROOTDATA_BOT_TOKEN: 8346031251:AAHlJgiduOLKhX3frVXCcFmFTls7KOEmZ-c
+2025-08-25 17:46:24,982 - INFO - ROOTDATA_CHAT_ID: 1339285013
+2025-08-25 17:46:24,982 - INFO - TELEGRAM_BOT_TOKEN: 8346031251:AAHlJgiduOLKhX3frVXCcFmFTls7KOEmZ-c
+2025-08-25 17:46:24,982 - INFO - TELEGRAM_CHAT_ID: 1339285013
+2025-08-25 17:46:24,982 - INFO - 선택된 BOT_TOKEN: 8346031251:AAHlJgiduOLKhX3frVXCcFmFTls7KOEmZ-c
+2025-08-25 17:46:24,982 - INFO - 선택된 CHAT_ID: 1339285013
+2025-08-25 17:46:24,982 - INFO - Hot score 모니터링 한 번 실행
+2025-08-25 17:46:24,982 - INFO - Hot score 확인 및 전송 시작
+2025-08-25 17:46:24,982 - INFO - Rootdata hot score 데이터를 가져오는 중...
+2025-08-25 17:46:26,398 - WARNING - JavaScript에서 hot score 데이터를 찾을 수 없습니다. HTML 테이블에서 추출을 시도합니다.
+2025-08-25 17:46:26,402 - INFO - HTML 테이블에서 30개의 hot score 데이터를 추출했습니다.
+2025-08-25 17:46:26,403 - INFO - Hot score 데이터 추출 완료: 10개 프로젝트
+2025-08-25 17:46:27,723 - INFO - 텔레그램 메시지 전송 성공 (chat_id: 1339285013)
+2025-08-25 17:46:29,011 - INFO - 텔레그램 메시지 전송 성공 (chat_id: -4961025651)
+2025-08-25 17:46:29,011 - INFO - 텔레그램 전송 완료: 2/2 성공
+2025-08-25 17:46:29,012 - INFO - Hot score 알림 전송 완료
+2025-08-25 17:46:29,012 - INFO - 현재 데이터 저장 완료: 10개 프로젝트
+2025-08-25 17:47:02,716 - INFO - 환경 변수 파일 경로: /Users/chasanghun/practice/suilend_alert/.env
+2025-08-25 17:47:02,716 - INFO - 환경 변수 파일 존재: True
+2025-08-25 17:47:02,716 - INFO - 환경 변수 로딩 중...
+2025-08-25 17:47:02,716 - INFO - ROOTDATA_BOT_TOKEN: 8346031251:AAHlJgiduOLKhX3frVXCcFmFTls7KOEmZ-c
+2025-08-25 17:47:02,716 - INFO - ROOTDATA_CHAT_ID: 1339285013
+2025-08-25 17:47:02,716 - INFO - TELEGRAM_BOT_TOKEN: 8346031251:AAHlJgiduOLKhX3frVXCcFmFTls7KOEmZ-c
+2025-08-25 17:47:02,716 - INFO - TELEGRAM_CHAT_ID: 1339285013
+2025-08-25 17:47:02,716 - INFO - 선택된 BOT_TOKEN: 8346031251:AAHlJgiduOLKhX3frVXCcFmFTls7KOEmZ-c
+2025-08-25 17:47:02,716 - INFO - 선택된 CHAT_ID: 1339285013
+2025-08-25 17:47:02,717 - INFO - 이전 데이터 로드 완료: 10개 프로젝트
+2025-08-25 17:47:02,717 - INFO - Hot score 모니터링 한 번 실행
+2025-08-25 17:47:02,717 - INFO - Hot score 확인 및 전송 시작
+2025-08-25 17:47:02,717 - INFO - Rootdata hot score 데이터를 가져오는 중...
+2025-08-25 17:47:05,971 - WARNING - JavaScript에서 hot score 데이터를 찾을 수 없습니다. HTML 테이블에서 추출을 시도합니다.
+2025-08-25 17:47:05,975 - INFO - HTML 테이블에서 30개의 hot score 데이터를 추출했습니다.
+2025-08-25 17:47:05,975 - INFO - Hot score 데이터 추출 완료: 10개 프로젝트
+2025-08-25 17:47:07,187 - INFO - 텔레그램 메시지 전송 성공 (chat_id: 1339285013)
+2025-08-25 17:47:08,404 - INFO - 텔레그램 메시지 전송 성공 (chat_id: -4961025651)
+2025-08-25 17:47:08,404 - INFO - 텔레그램 전송 완료: 2/2 성공
+2025-08-25 17:47:08,406 - INFO - Hot score 알림 전송 완료
+2025-08-25 17:47:08,408 - INFO - 현재 데이터 저장 완료: 10개 프로젝트
+2025-08-25 18:01:18,195 - INFO - 환경 변수 파일 경로: /Users/chasanghun/practice/suilend_alert/.env
+2025-08-25 18:01:18,195 - INFO - 환경 변수 파일 존재: True
+2025-08-25 18:01:18,196 - INFO - 환경 변수 로딩 중...
+2025-08-25 18:01:18,196 - INFO - ROOTDATA_BOT_TOKEN: 8346031251:AAHlJgiduOLKhX3frVXCcFmFTls7KOEmZ-c
+2025-08-25 18:01:18,196 - INFO - ROOTDATA_CHAT_ID: 1339285013
+2025-08-25 18:01:18,196 - INFO - TELEGRAM_BOT_TOKEN: 8346031251:AAHlJgiduOLKhX3frVXCcFmFTls7KOEmZ-c
+2025-08-25 18:01:18,196 - INFO - TELEGRAM_CHAT_ID: 1339285013
+2025-08-25 18:01:18,196 - INFO - 선택된 BOT_TOKEN: 8346031251:AAHlJgiduOLKhX3frVXCcFmFTls7KOEmZ-c
+2025-08-25 18:01:18,196 - INFO - 선택된 CHAT_ID: 1339285013
+2025-08-25 18:01:18,196 - INFO - 이전 데이터 로드 완료: 10개 프로젝트
+2025-08-25 18:01:18,196 - INFO - Hot score 모니터링 한 번 실행
+2025-08-25 18:01:18,196 - INFO - Hot score 확인 및 전송 시작
+2025-08-25 18:01:18,196 - INFO - Rootdata hot score 데이터를 가져오는 중...
+2025-08-25 18:01:19,350 - WARNING - JavaScript에서 hot score 데이터를 찾을 수 없습니다. HTML 테이블에서 추출을 시도합니다.
+2025-08-25 18:01:19,354 - INFO - HTML 테이블에서 30개의 hot score 데이터를 추출했습니다.
+2025-08-25 18:01:19,354 - INFO - Hot score 데이터 추출 완료: 10개 프로젝트
+2025-08-25 18:01:19,356 - INFO - Hot score 데이터에 변경사항이 없습니다.
+2025-08-25 18:01:25,316 - INFO - 환경 변수 파일 경로: /Users/chasanghun/practice/suilend_alert/.env
+2025-08-25 18:01:25,316 - INFO - 환경 변수 파일 존재: True
+2025-08-25 18:01:25,316 - INFO - 환경 변수 로딩 중...
+2025-08-25 18:01:25,316 - INFO - ROOTDATA_BOT_TOKEN: 8346031251:AAHlJgiduOLKhX3frVXCcFmFTls7KOEmZ-c
+2025-08-25 18:01:25,316 - INFO - ROOTDATA_CHAT_ID: 1339285013
+2025-08-25 18:01:25,316 - INFO - TELEGRAM_BOT_TOKEN: 8346031251:AAHlJgiduOLKhX3frVXCcFmFTls7KOEmZ-c
+2025-08-25 18:01:25,316 - INFO - TELEGRAM_CHAT_ID: 1339285013
+2025-08-25 18:01:25,316 - INFO - 선택된 BOT_TOKEN: 8346031251:AAHlJgiduOLKhX3frVXCcFmFTls7KOEmZ-c
+2025-08-25 18:01:25,316 - INFO - 선택된 CHAT_ID: 1339285013
+2025-08-25 18:01:25,316 - INFO - Hot score 모니터링 한 번 실행
+2025-08-25 18:01:25,316 - INFO - Hot score 확인 및 전송 시작
+2025-08-25 18:01:25,316 - INFO - Rootdata hot score 데이터를 가져오는 중...
+2025-08-25 18:01:26,853 - WARNING - JavaScript에서 hot score 데이터를 찾을 수 없습니다. HTML 테이블에서 추출을 시도합니다.
+2025-08-25 18:01:26,856 - INFO - HTML 테이블에서 30개의 hot score 데이터를 추출했습니다.
+2025-08-25 18:01:26,856 - INFO - Hot score 데이터 추출 완료: 10개 프로젝트
+2025-08-25 18:01:28,196 - INFO - 텔레그램 메시지 전송 성공 (chat_id: 1339285013)
+2025-08-25 18:01:29,464 - INFO - 텔레그램 메시지 전송 성공 (chat_id: -4961025651)
+2025-08-25 18:01:29,465 - INFO - 텔레그램 전송 완료: 2/2 성공
+2025-08-25 18:01:29,467 - INFO - Hot score 알림 전송 완료
+2025-08-25 18:01:29,468 - INFO - 현재 데이터 저장 완료: 10개 프로젝트
+2025-08-25 18:02:40,872 - INFO - 환경 변수 파일 경로: /Users/chasanghun/practice/suilend_alert/.env
+2025-08-25 18:02:40,872 - INFO - 환경 변수 파일 존재: True
+2025-08-25 18:02:40,872 - INFO - 환경 변수 로딩 중...
+2025-08-25 18:02:40,872 - INFO - ROOTDATA_BOT_TOKEN: 8346031251:AAHlJgiduOLKhX3frVXCcFmFTls7KOEmZ-c
+2025-08-25 18:02:40,872 - INFO - ROOTDATA_CHAT_ID: 1339285013
+2025-08-25 18:02:40,873 - INFO - TELEGRAM_BOT_TOKEN: 8346031251:AAHlJgiduOLKhX3frVXCcFmFTls7KOEmZ-c
+2025-08-25 18:02:40,873 - INFO - TELEGRAM_CHAT_ID: 1339285013
+2025-08-25 18:02:40,873 - INFO - 선택된 BOT_TOKEN: 8346031251:AAHlJgiduOLKhX3frVXCcFmFTls7KOEmZ-c
+2025-08-25 18:02:40,873 - INFO - 선택된 CHAT_ID: 1339285013
+2025-08-25 18:02:40,873 - INFO - 이전 데이터 로드 완료: 10개 프로젝트
+2025-08-25 18:02:40,873 - INFO - Hot score 모니터링 한 번 실행
+2025-08-25 18:02:40,873 - INFO - Hot score 확인 및 전송 시작
+2025-08-25 18:02:40,873 - INFO - Rootdata hot score 데이터를 가져오는 중...
+2025-08-25 18:02:42,633 - WARNING - JavaScript에서 hot score 데이터를 찾을 수 없습니다. HTML 테이블에서 추출을 시도합니다.
+2025-08-25 18:02:42,636 - INFO - HTML 테이블에서 30개의 hot score 데이터를 추출했습니다.
+2025-08-25 18:02:42,637 - INFO - Hot score 데이터 추출 완료: 10개 프로젝트
+2025-08-25 18:02:42,638 - INFO - Hot score 데이터에 변경사항이 없습니다.
+2025-08-25 18:02:48,385 - INFO - 환경 변수 파일 경로: /Users/chasanghun/practice/suilend_alert/.env
+2025-08-25 18:02:48,385 - INFO - 환경 변수 파일 존재: True
+2025-08-25 18:02:48,385 - INFO - 환경 변수 로딩 중...
+2025-08-25 18:02:48,385 - INFO - ROOTDATA_BOT_TOKEN: 8346031251:AAHlJgiduOLKhX3frVXCcFmFTls7KOEmZ-c
+2025-08-25 18:02:48,385 - INFO - ROOTDATA_CHAT_ID: 1339285013
+2025-08-25 18:02:48,385 - INFO - TELEGRAM_BOT_TOKEN: 8346031251:AAHlJgiduOLKhX3frVXCcFmFTls7KOEmZ-c
+2025-08-25 18:02:48,385 - INFO - TELEGRAM_CHAT_ID: 1339285013
+2025-08-25 18:02:48,385 - INFO - 선택된 BOT_TOKEN: 8346031251:AAHlJgiduOLKhX3frVXCcFmFTls7KOEmZ-c
+2025-08-25 18:02:48,385 - INFO - 선택된 CHAT_ID: 1339285013
+2025-08-25 18:02:48,385 - INFO - Hot score 모니터링 한 번 실행
+2025-08-25 18:02:48,385 - INFO - Hot score 확인 및 전송 시작
+2025-08-25 18:02:48,385 - INFO - Rootdata hot score 데이터를 가져오는 중...
+2025-08-25 18:02:49,970 - WARNING - JavaScript에서 hot score 데이터를 찾을 수 없습니다. HTML 테이블에서 추출을 시도합니다.
+2025-08-25 18:02:49,973 - INFO - HTML 테이블에서 30개의 hot score 데이터를 추출했습니다.
+2025-08-25 18:02:49,973 - INFO - Hot score 데이터 추출 완료: 10개 프로젝트
+2025-08-25 18:02:49,975 - ERROR - Hot score 확인 및 전송 중 오류 발생: 'RootdataHotScoreMonitor' object has no attribute 'create_project_url'
+2025-08-25 18:05:58,028 - INFO - 환경 변수 파일 경로: /Users/chasanghun/practice/suilend_alert/.env
+2025-08-25 18:05:58,028 - INFO - 환경 변수 파일 존재: True
+2025-08-25 18:05:58,028 - INFO - 환경 변수 로딩 중...
+2025-08-25 18:05:58,028 - INFO - ROOTDATA_BOT_TOKEN: 8346031251:AAHlJgiduOLKhX3frVXCcFmFTls7KOEmZ-c
+2025-08-25 18:05:58,028 - INFO - ROOTDATA_CHAT_ID: 1339285013
+2025-08-25 18:05:58,028 - INFO - TELEGRAM_BOT_TOKEN: 8346031251:AAHlJgiduOLKhX3frVXCcFmFTls7KOEmZ-c
+2025-08-25 18:05:58,029 - INFO - TELEGRAM_CHAT_ID: 1339285013
+2025-08-25 18:05:58,029 - INFO - 선택된 BOT_TOKEN: 8346031251:AAHlJgiduOLKhX3frVXCcFmFTls7KOEmZ-c
+2025-08-25 18:05:58,029 - INFO - 선택된 CHAT_ID: 1339285013
+2025-08-25 18:05:58,029 - INFO - Hot score 모니터링 한 번 실행
+2025-08-25 18:05:58,029 - INFO - Hot score 확인 및 전송 시작
+2025-08-25 18:05:58,029 - INFO - Rootdata hot score 데이터를 가져오는 중...
+2025-08-25 18:05:59,606 - WARNING - JavaScript에서 hot score 데이터를 찾을 수 없습니다. HTML 테이블에서 추출을 시도합니다.
+2025-08-25 18:05:59,609 - INFO - HTML 테이블에서 30개의 hot score 데이터를 추출했습니다.
+2025-08-25 18:05:59,609 - INFO - Hot score 데이터 추출 완료: 10개 프로젝트
+2025-08-25 18:06:01,183 - INFO - 텔레그램 메시지 전송 성공 (chat_id: 1339285013)
+2025-08-25 18:06:02,476 - INFO - 텔레그램 메시지 전송 성공 (chat_id: -4961025651)
+2025-08-25 18:06:02,476 - INFO - 텔레그램 전송 완료: 2/2 성공
+2025-08-25 18:06:02,477 - INFO - Hot score 알림 전송 완료
+2025-08-25 18:06:02,477 - INFO - 현재 데이터 저장 완료: 10개 프로젝트

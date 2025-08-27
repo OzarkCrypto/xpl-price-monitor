@@ -1,0 +1,88 @@
+{
+  "success": true,
+  "repos_analyzed": 0,
+  "total_repo_publishers": 0,
+  "total_doc_publishers": 9,
+  "unique_publishers": [
+    {
+      "type": "known_publisher",
+      "value": "okx",
+      "context": "s://registry.npmjs.org/deep-is/-/deep-is-0.1.4.tgz\",       \"integrity\": \"sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==\",       \"dev\": true     },     \"no"
+    },
+    {
+      "type": "known_publisher",
+      "value": "drw",
+      "context": "n-syntax-object-rest-spread-7.8.3.tgz\",       \"integrity\": \"sha512-XoqMijGZb9y3y2XskN+P1wUGiVwWZ5JmoDRwx5+3GmEplNyVM2s2Dg8ILFQm8rWM48orGy5YpI5Bl8U1y7ydlA==\",       \"dev\": true,       \"dependencies\": {"
+    },
+    {
+      "type": "known_publisher",
+      "value": "xtx",
+      "context": "/jest-changed-files-27.3.0.tgz\",       \"integrity\": \"sha512-9DJs9garMHv4RhylUMZgbdCJ3+jHSkpL9aaVKp13xtXAD80qLTLrqcDZL1PHA9dYA0bCI86Nv2BhkLpLhrBcPg==\",       \"dev\": true,       \"dependencies\": {         \""
+    },
+    {
+      "type": "known_publisher",
+      "value": "virtu",
+      "context": "ts account key.  Developer Setup ---------------  Using python 3.7 or newer, create, and activate a virtual environment:      python3 -m venv ve     . ve/bin/activate  To install this library in editable m"
+    },
+    {
+      "type": "known_publisher",
+      "value": "flow",
+      "context": "Python =====================  [![pytest](https://github.com/pyth-network/pyth-client-py/actions/workflows/pytest.yml/badge.svg?branch=main)](https://github.com/pyth-network/pyth-client-py/actions/workflow"
+    }
+  ],
+  "repo_analysis": {
+    "analyzed_repos": [],
+    "total_publishers": 0,
+    "publishers": []
+  },
+  "doc_analysis": {
+    "documentation_publishers": [
+      {
+        "type": "known_publisher",
+        "value": "okx",
+        "context": "s://registry.npmjs.org/deep-is/-/deep-is-0.1.4.tgz\",       \"integrity\": \"sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==\",       \"dev\": true     },     \"no"
+      },
+      {
+        "type": "known_publisher",
+        "value": "drw",
+        "context": "n-syntax-object-rest-spread-7.8.3.tgz\",       \"integrity\": \"sha512-XoqMijGZb9y3y2XskN+P1wUGiVwWZ5JmoDRwx5+3GmEplNyVM2s2Dg8ILFQm8rWM48orGy5YpI5Bl8U1y7ydlA==\",       \"dev\": true,       \"dependencies\": {"
+      },
+      {
+        "type": "known_publisher",
+        "value": "xtx",
+        "context": "/jest-changed-files-27.3.0.tgz\",       \"integrity\": \"sha512-9DJs9garMHv4RhylUMZgbdCJ3+jHSkpL9aaVKp13xtXAD80qLTLrqcDZL1PHA9dYA0bCI86Nv2BhkLpLhrBcPg==\",       \"dev\": true,       \"dependencies\": {         \""
+      },
+      {
+        "type": "known_publisher",
+        "value": "okx",
+        "context": "s://registry.npmjs.org/deep-is/-/deep-is-0.1.4.tgz\",       \"integrity\": \"sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==\",       \"dev\": true     },     \"no"
+      },
+      {
+        "type": "known_publisher",
+        "value": "drw",
+        "context": "n-syntax-object-rest-spread-7.8.3.tgz\",       \"integrity\": \"sha512-XoqMijGZb9y3y2XskN+P1wUGiVwWZ5JmoDRwx5+3GmEplNyVM2s2Dg8ILFQm8rWM48orGy5YpI5Bl8U1y7ydlA==\",       \"dev\": true,       \"dependencies\": {"
+      },
+      {
+        "type": "known_publisher",
+        "value": "xtx",
+        "context": "g/browser-or-node/-/browser-or-node-1.3.0.tgz\",       \"integrity\": \"sha512-0F2z/VSnLbmEeBcUrSuDH5l0HxTXdQQzLjkmBR4cYfvg1zJrKSlmIZFqyFR8oX0NrwPhy3c3HQ6i3OxMbew4Tg==\",       \"dev\": true     },     \"node_mo"
+      },
+      {
+        "type": "known_publisher",
+        "value": "virtu",
+        "context": "ts account key.  Developer Setup ---------------  Using python 3.7 or newer, create, and activate a virtual environment:      python3 -m venv ve     . ve/bin/activate  To install this library in editable m"
+      },
+      {
+        "type": "known_publisher",
+        "value": "flow",
+        "context": "Python =====================  [![pytest](https://github.com/pyth-network/pyth-client-py/actions/workflows/pytest.yml/badge.svg?branch=main)](https://github.com/pyth-network/pyth-client-py/actions/workflow"
+      },
+      {
+        "type": "known_publisher",
+        "value": "flow",
+        "context": "ee also: [Code guidelines](doc/code-guidelines.md)  ### Releases  The repository has several CI workflows that automatically release new versions of the various components when a new Github release is pub"
+      }
+    ],
+    "total_documentation_publishers": 9
+  }
+}

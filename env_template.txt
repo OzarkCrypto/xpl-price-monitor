@@ -1,0 +1,12 @@
+# Crypto Fundraising Monitor Configuration
+# Copy this file to .env and fill in your values
+
+# Telegram Bot Configuration (REQUIRED)
+TELEGRAM_BOT_TOKEN=your_bot_token_here
+TELEGRAM_CHAT_ID=1339285013
+
+# Scoring Configuration (Optional - defaults shown)
+HIGHLIGHT_THRESHOLD=7
+
+# Timezone Configuration (Optional - defaults shown)
+RUN_TIMEZONE=Asia/Seoul 

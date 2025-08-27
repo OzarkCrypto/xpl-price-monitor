@@ -1,0 +1,415 @@
+{
+  "success": true,
+  "total_publishers": 33,
+  "publishers": [
+    {
+      "name": "Binance",
+      "type": "Exchange",
+      "description": "세계 최대 암호화폐 거래소",
+      "status": "Active",
+      "source": "known_list"
+    },
+    {
+      "name": "Coinbase",
+      "type": "Exchange",
+      "description": "미국 최대 암호화폐 거래소",
+      "status": "Active",
+      "source": "known_list"
+    },
+    {
+      "name": "Kraken",
+      "type": "Exchange",
+      "description": "유럽 주요 암호화폐 거래소",
+      "status": "Active",
+      "source": "known_list"
+    },
+    {
+      "name": "Bitfinex",
+      "type": "Exchange",
+      "description": "유럽 기반 암호화폐 거래소",
+      "status": "Active",
+      "source": "known_list"
+    },
+    {
+      "name": "OKX",
+      "type": "Exchange",
+      "description": "아시아 주요 암호화폐 거래소",
+      "status": "Active",
+      "source": "known_list"
+    },
+    {
+      "name": "Bybit",
+      "type": "Exchange",
+      "description": "아시아 기반 암호화폐 거래소",
+      "status": "Active",
+      "source": "known_list"
+    },
+    {
+      "name": "KuCoin",
+      "type": "Exchange",
+      "description": "글로벌 암호화폐 거래소",
+      "status": "Active",
+      "source": "known_list"
+    },
+    {
+      "name": "Gate.io",
+      "type": "Exchange",
+      "description": "글로벌 암호화폐 거래소",
+      "status": "Active",
+      "source": "known_list"
+    },
+    {
+      "name": "Huobi",
+      "type": "Exchange",
+      "description": "아시아 기반 암호화폐 거래소",
+      "status": "Active",
+      "source": "known_list"
+    },
+    {
+      "name": "Bitstamp",
+      "type": "Exchange",
+      "description": "유럽 기반 암호화폐 거래소",
+      "status": "Active",
+      "source": "known_list"
+    },
+    {
+      "name": "Jump Trading",
+      "type": "Market Maker",
+      "description": "글로벌 알고리즘 트레이딩 회사",
+      "status": "Active",
+      "source": "known_list"
+    },
+    {
+      "name": "Alameda Research",
+      "type": "Market Maker",
+      "description": "암호화폐 시장메이커",
+      "status": "Inactive",
+      "source": "known_list"
+    },
+    {
+      "name": "Wintermute",
+      "type": "Market Maker",
+      "description": "글로벌 알고리즘 트레이딩 회사",
+      "status": "Active",
+      "source": "known_list"
+    },
+    {
+      "name": "GTS",
+      "type": "Market Maker",
+      "description": "글로벌 시장메이커",
+      "status": "Active",
+      "source": "known_list"
+    },
+    {
+      "name": "Virtu Financial",
+      "type": "Market Maker",
+      "description": "글로벌 시장메이커",
+      "status": "Active",
+      "source": "known_list"
+    },
+    {
+      "name": "Citadel Securities",
+      "type": "Market Maker",
+      "description": "글로벌 시장메이커",
+      "status": "Active",
+      "source": "known_list"
+    },
+    {
+      "name": "DRW",
+      "type": "Market Maker",
+      "description": "글로벌 시장메이커",
+      "status": "Active",
+      "source": "known_list"
+    },
+    {
+      "name": "Optiver",
+      "type": "Market Maker",
+      "description": "글로벌 시장메이커",
+      "status": "Active",
+      "source": "known_list"
+    },
+    {
+      "name": "Flow Traders",
+      "type": "Market Maker",
+      "description": "유럽 기반 시장메이커",
+      "status": "Active",
+      "source": "known_list"
+    },
+    {
+      "name": "XTX Markets",
+      "type": "Market Maker",
+      "description": "글로벌 알고리즘 트레이딩 회사",
+      "status": "Active",
+      "source": "known_list"
+    },
+    {
+      "name": "Goldman Sachs",
+      "type": "Institutional",
+      "description": "글로벌 투자은행",
+      "status": "Active",
+      "source": "known_list"
+    },
+    {
+      "name": "JPMorgan Chase",
+      "type": "Institutional",
+      "description": "글로벌 투자은행",
+      "status": "Active",
+      "source": "known_list"
+    },
+    {
+      "name": "Morgan Stanley",
+      "type": "Institutional",
+      "description": "글로벌 투자은행",
+      "status": "Active",
+      "source": "known_list"
+    },
+    {
+      "name": "Barclays",
+      "type": "Institutional",
+      "description": "영국 투자은행",
+      "status": "Active",
+      "source": "known_list"
+    },
+    {
+      "name": "Deutsche Bank",
+      "type": "Institutional",
+      "description": "독일 투자은행",
+      "status": "Active",
+      "source": "known_list"
+    },
+    {
+      "name": "UBS",
+      "type": "Institutional",
+      "description": "스위스 투자은행",
+      "status": "Active",
+      "source": "known_list"
+    },
+    {
+      "name": "Credit Suisse",
+      "type": "Institutional",
+      "description": "스위스 투자은행",
+      "status": "Active",
+      "source": "known_list"
+    },
+    {
+      "name": "Nomura",
+      "type": "Institutional",
+      "description": "일본 투자은행",
+      "status": "Active",
+      "source": "known_list"
+    },
+    {
+      "name": "Mizuho",
+      "type": "Institutional",
+      "description": "일본 투자은행",
+      "status": "Active",
+      "source": "known_list"
+    },
+    {
+      "name": "Sumitomo Mitsui",
+      "type": "Institutional",
+      "description": "일본 투자은행",
+      "status": "Active",
+      "source": "known_list"
+    },
+    {
+      "name": "biggest",
+      "type": "Unknown",
+      "description": "Found in https://pyth.network/",
+      "status": "Active",
+      "source": "documentation"
+    },
+    {
+      "name": "Decentralized spot and perpetuals",
+      "type": "Unknown",
+      "description": "Found in https://pyth.network/",
+      "status": "Active",
+      "source": "documentation"
+    },
+    {
+      "name": "s Rays",
+      "type": "Unknown",
+      "description": "Found in https://pyth.network/",
+      "status": "Active",
+      "source": "documentation"
+    }
+  ],
+  "type_stats": {
+    "Exchange": 10,
+    "Market Maker": 10,
+    "Institutional": 10,
+    "Unknown": 3
+  },
+  "status_stats": {
+    "Active": 32,
+    "Inactive": 1
+  },
+  "insights_data": {
+    "total_publishers": 0,
+    "active_publishers": 0,
+    "publisher_types": {
+      "Exchange": 22,
+      "Market Maker": 5,
+      "Institutional": 23
+    }
+  },
+  "documentation_data": {
+    "total_publishers": 27,
+    "publisher_info": [
+      {
+        "name": "biggest",
+        "source": "https://pyth.network/",
+        "type": "documentation"
+      },
+      {
+        "name": "biggest",
+        "source": "https://pyth.network/",
+        "type": "documentation"
+      },
+      {
+        "name": "biggest",
+        "source": "https://pyth.network/",
+        "type": "documentation"
+      },
+      {
+        "name": "Decentralized spot and perpetuals",
+        "source": "https://pyth.network/",
+        "type": "documentation"
+      },
+      {
+        "name": "Decentralized spot and perpetuals",
+        "source": "https://pyth.network/",
+        "type": "documentation"
+      },
+      {
+        "name": "Decentralized spot and perpetuals",
+        "source": "https://pyth.network/",
+        "type": "documentation"
+      },
+      {
+        "name": "Decentralized spot and perpetuals",
+        "source": "https://pyth.network/",
+        "type": "documentation"
+      },
+      {
+        "name": "Decentralized spot and perpetuals",
+        "source": "https://pyth.network/",
+        "type": "documentation"
+      },
+      {
+        "name": "Decentralized spot and perpetuals",
+        "source": "https://pyth.network/",
+        "type": "documentation"
+      },
+      {
+        "name": "Decentralized spot and perpetuals",
+        "source": "https://pyth.network/",
+        "type": "documentation"
+      },
+      {
+        "name": "Decentralized spot and perpetuals",
+        "source": "https://pyth.network/",
+        "type": "documentation"
+      },
+      {
+        "name": "Decentralized spot and perpetuals",
+        "source": "https://pyth.network/",
+        "type": "documentation"
+      },
+      {
+        "name": "Decentralized spot and perpetuals",
+        "source": "https://pyth.network/",
+        "type": "documentation"
+      },
+      {
+        "name": "Wintermute",
+        "source": "https://pyth.network/",
+        "type": "documentation"
+      },
+      {
+        "name": "Wintermute",
+        "source": "https://pyth.network/",
+        "type": "documentation"
+      },
+      {
+        "name": "Wintermute",
+        "source": "https://pyth.network/",
+        "type": "documentation"
+      },
+      {
+        "name": "Wintermute",
+        "source": "https://pyth.network/",
+        "type": "documentation"
+      },
+      {
+        "name": "Wintermute",
+        "source": "https://pyth.network/",
+        "type": "documentation"
+      },
+      {
+        "name": "Wintermute",
+        "source": "https://pyth.network/",
+        "type": "documentation"
+      },
+      {
+        "name": "Wintermute",
+        "source": "https://pyth.network/",
+        "type": "documentation"
+      },
+      {
+        "name": "Wintermute",
+        "source": "https://pyth.network/",
+        "type": "documentation"
+      },
+      {
+        "name": "Wintermute",
+        "source": "https://pyth.network/",
+        "type": "documentation"
+      },
+      {
+        "name": "Wintermute",
+        "source": "https://pyth.network/",
+        "type": "documentation"
+      },
+      {
+        "name": "Wintermute",
+        "source": "https://pyth.network/",
+        "type": "documentation"
+      },
+      {
+        "name": "Wintermute",
+        "source": "https://pyth.network/",
+        "type": "documentation"
+      },
+      {
+        "name": "s Rays",
+        "source": "https://pyth.network/",
+        "type": "documentation"
+      },
+      {
+        "name": "s Rays",
+        "source": "https://pyth.network/",
+        "type": "documentation"
+      }
+    ],
+    "documentation_sources": [
+      {
+        "url": "https://docs.pyth.network/",
+        "status": "success",
+        "publishers_found": 0
+      },
+      {
+        "url": "https://pyth.network/",
+        "status": "success",
+        "publishers_found": 27
+      },
+      {
+        "url": "https://pyth.network/developers",
+        "status": "HTTP 404",
+        "publishers_found": 0
+      }
+    ]
+  },
+  "known_publishers_count": 30,
+  "documentation_publishers_count": 27
+}

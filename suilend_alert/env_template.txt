@@ -1,0 +1,20 @@
+# Suilend LTV 모니터링 봇 설정
+# 이 파일을 .env로 복사하고 실제 값으로 수정하세요
+
+# 텔레그램 봇 설정
+# 1. @BotFather에서 봇 생성 후 토큰 받기
+# 2. 봇과 대화 시작 후 /start
+# 3. https://api.telegram.org/bot<YOUR_BOT_TOKEN>/getUpdates 에서 chat_id 확인
+TELEGRAM_BOT_TOKEN=your_telegram_bot_token_here
+TELEGRAM_CHAT_ID=your_telegram_chat_id_here
+
+# 전화번호 (선택사항)
+PHONE_NUMBER=+82-10-1234-5678
+
+# 모니터링 간격 (분 단위, 기본값: 5분)
+MONITORING_INTERVAL=5
+
+# LTV 임계값 설정 (선택사항, 코드에서 기본값 사용)
+# LTV_WARNING_THRESHOLD=0.8
+# LTV_DANGER_THRESHOLD=0.9
+# LTV_LIQUIDATION_THRESHOLD=0.95 

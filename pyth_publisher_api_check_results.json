@@ -1,0 +1,1295 @@
+{
+  "publisher_endpoints": {
+    "https://hermes.pyth.network": {
+      "/v2/publishers": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/api/publishers": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/publishers": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/v1/publishers": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/v2/publisher/list": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/api/publisher/list": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/publisher/list": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/v2/publishers/details": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/api/publishers/details": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/publishers/details": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/v2/publishers/stats": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/api/publishers/stats": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/publishers/stats": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/v2/publishers/feeds": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/api/publishers/feeds": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/publishers/feeds": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/v2/publishers/metadata": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/api/publishers/metadata": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/publishers/metadata": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/v2/publishers/validators": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/api/publishers/validators": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/publishers/validators": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/v2/publishers/status": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/api/publishers/status": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/publishers/status": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/v2/publishers/registry": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/api/publishers/registry": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/publishers/registry": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/v2/publishers/authority": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/api/publishers/authority": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/publishers/authority": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/v2/publishers/config": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/api/publishers/config": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/publishers/config": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/v2/publishers/network": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/api/publishers/network": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      },
+      "/publishers/network": {
+        "status": 404,
+        "data_type": "error",
+        "data_preview": "HTTP 404",
+        "has_publishers": false
+      }
+    },
+    "https://api.pyth.network": {
+      "/v2/publishers": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /v2/publishers (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103823130>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/api/publishers": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /api/publishers (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103823460>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/publishers": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /publishers (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1038237c0>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/v1/publishers": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /v1/publishers (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1037adee0>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/v2/publisher/list": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /v2/publisher/list (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103823340>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/api/publisher/list": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /api/publisher/list (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103823b20>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/publisher/list": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /publisher/list (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103823e80>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/v2/publishers/details": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /v2/publishers/details (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10382f220>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/api/publishers/details": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /api/publishers/details (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10382f580>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/publishers/details": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /publishers/details (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10382f8e0>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/v2/publishers/stats": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /v2/publishers/stats (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10382fc40>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/api/publishers/stats": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /api/publishers/stats (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10382ffd0>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/publishers/stats": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /publishers/stats (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383f370>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/v2/publishers/feeds": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /v2/publishers/feeds (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10382fe50>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/api/publishers/feeds": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /api/publishers/feeds (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10382fb50>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/publishers/feeds": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /publishers/feeds (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10382f7f0>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/v2/publishers/metadata": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /v2/publishers/metadata (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10382f490>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/api/publishers/metadata": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /api/publishers/metadata (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10382f280>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/publishers/metadata": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /publishers/metadata (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103823f10>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/v2/publishers/validators": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /v2/publishers/validators (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103823be0>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/api/publishers/validators": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /api/publishers/validators (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103823220>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/publishers/validators": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /publishers/validators (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1037adc10>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/v2/publishers/status": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /v2/publishers/status (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383f1c0>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/api/publishers/status": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /api/publishers/status (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383f070>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/publishers/status": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /publishers/status (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383fa30>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/v2/publishers/registry": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /v2/publishers/registry (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383fdc0>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/api/publishers/registry": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /api/publishers/registry (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1037ad760>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/publishers/registry": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /publishers/registry (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103823580>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/v2/publishers/authority": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /v2/publishers/authority (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103823940>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/api/publishers/authority": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /api/publishers/authority (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103823e50>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/publishers/authority": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /publishers/authority (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383fb80>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/v2/publishers/config": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /v2/publishers/config (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383f820>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/api/publishers/config": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /api/publishers/config (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383f1f0>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/publishers/config": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /publishers/config (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383f4f0>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/v2/publishers/network": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /v2/publishers/network (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383f5e0>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/api/publishers/network": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /api/publishers/network (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10382f190>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/publishers/network": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /publishers/network (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10382f4c0>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      }
+    },
+    "https://xc-mainnet.pyth.network": {
+      "/v2/publishers": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /v2/publishers (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10382fbb0>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/api/publishers": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /api/publishers (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10382ff40>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/publishers": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /publishers (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10382fdc0>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/v1/publishers": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /v1/publishers (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10382f880>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/v2/publisher/list": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /v2/publisher/list (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10382f1c0>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/api/publisher/list": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /api/publisher/list (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10382f250>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/publisher/list": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /publisher/list (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383f430>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/v2/publishers/details": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /v2/publishers/details (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383f4f0>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/api/publishers/details": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /api/publishers/details (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383f1f0>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/publishers/details": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /publishers/details (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383f820>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/v2/publishers/stats": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /v2/publishers/stats (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383fee0>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/api/publishers/stats": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /api/publishers/stats (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103823a30>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/publishers/stats": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /publishers/stats (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103823370>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/v2/publishers/feeds": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /v2/publishers/feeds (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103823310>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/api/publishers/feeds": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /api/publishers/feeds (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1037ada30>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/publishers/feeds": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /publishers/feeds (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10384c280>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/v2/publishers/metadata": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /v2/publishers/metadata (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1037ad940>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/api/publishers/metadata": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /api/publishers/metadata (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103823a60>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/publishers/metadata": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /publishers/metadata (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103823ee0>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/v2/publishers/validators": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /v2/publishers/validators (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103823b50>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/api/publishers/validators": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /api/publishers/validators (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383fe50>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/publishers/validators": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /publishers/validators (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383fac0>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/v2/publishers/status": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /v2/publishers/status (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383f760>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/api/publishers/status": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /api/publishers/status (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383f490>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/publishers/status": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /publishers/status (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383f370>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/v2/publishers/registry": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /v2/publishers/registry (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10382f5b0>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/api/publishers/registry": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /api/publishers/registry (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10382f9a0>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/publishers/registry": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /publishers/registry (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10382fee0>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/v2/publishers/authority": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /v2/publishers/authority (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10382ffa0>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/api/publishers/authority": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /api/publishers/authority (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10384c3a0>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/publishers/authority": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /publishers/authority (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10382ffa0>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/v2/publishers/config": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /v2/publishers/config (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10382fee0>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/api/publishers/config": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /api/publishers/config (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10382f9a0>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/publishers/config": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /publishers/config (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10382f5b0>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/v2/publishers/network": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /v2/publishers/network (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383f160>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/api/publishers/network": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /api/publishers/network (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383f730>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      },
+      "/publishers/network": {
+        "status": "error",
+        "data_type": "exception",
+        "data_preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /publishers/network (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383fa90>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))",
+        "has_publishers": false
+      }
+    }
+  },
+  "known_endpoints": {
+    "https://hermes.pyth.network": {
+      "/v2/price_feeds": {
+        "status": 200,
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/updates/price/latest": {
+        "status": 400,
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/api/latest_vaas": {
+        "status": 400,
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/current": {
+        "status": 404,
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/history": {
+        "status": 404,
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/aggregate": {
+        "status": 404,
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/status": {
+        "status": 404,
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/metadata": {
+        "status": 404,
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/config": {
+        "status": 404,
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/network": {
+        "status": 404,
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/validators": {
+        "status": 404,
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/authority": {
+        "status": 404,
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/publishers": {
+        "status": 404,
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/sources": {
+        "status": 404,
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/providers": {
+        "status": 404,
+        "has_publishers": false,
+        "publisher_info": null
+      }
+    },
+    "https://api.pyth.network": {
+      "/v2/price_feeds": {
+        "status": "error",
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/updates/price/latest": {
+        "status": "error",
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/api/latest_vaas": {
+        "status": "error",
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/current": {
+        "status": "error",
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/history": {
+        "status": "error",
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/aggregate": {
+        "status": "error",
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/status": {
+        "status": "error",
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/metadata": {
+        "status": "error",
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/config": {
+        "status": "error",
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/network": {
+        "status": "error",
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/validators": {
+        "status": "error",
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/authority": {
+        "status": "error",
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/publishers": {
+        "status": "error",
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/sources": {
+        "status": "error",
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/providers": {
+        "status": "error",
+        "has_publishers": false,
+        "publisher_info": null
+      }
+    },
+    "https://xc-mainnet.pyth.network": {
+      "/v2/price_feeds": {
+        "status": "error",
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/updates/price/latest": {
+        "status": "error",
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/api/latest_vaas": {
+        "status": "error",
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/current": {
+        "status": "error",
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/history": {
+        "status": "error",
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/aggregate": {
+        "status": "error",
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/status": {
+        "status": "error",
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/metadata": {
+        "status": "error",
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/config": {
+        "status": "error",
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/network": {
+        "status": "error",
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/validators": {
+        "status": "error",
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/authority": {
+        "status": "error",
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/publishers": {
+        "status": "error",
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/sources": {
+        "status": "error",
+        "has_publishers": false,
+        "publisher_info": null
+      },
+      "/v2/price_feeds/providers": {
+        "status": "error",
+        "has_publishers": false,
+        "publisher_info": null
+      }
+    }
+  },
+  "doc_apis": {
+    "https://hermes.pyth.network": {
+      "/docs": {
+        "status": 200,
+        "content_type": "text/html",
+        "has_publisher_info": false,
+        "preview": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Swagger UI</title>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"./swagger-ui.css\" />\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"index.css\" />\n    <link rel=\"ic..."
+      },
+      "/api/docs": {
+        "status": 404,
+        "content_type": "error",
+        "has_publisher_info": false,
+        "preview": "HTTP 404"
+      },
+      "/v2/docs": {
+        "status": 404,
+        "content_type": "error",
+        "has_publisher_info": false,
+        "preview": "HTTP 404"
+      },
+      "/swagger": {
+        "status": 404,
+        "content_type": "error",
+        "has_publisher_info": false,
+        "preview": "HTTP 404"
+      },
+      "/api/swagger": {
+        "status": 404,
+        "content_type": "error",
+        "has_publisher_info": false,
+        "preview": "HTTP 404"
+      },
+      "/v2/swagger": {
+        "status": 404,
+        "content_type": "error",
+        "has_publisher_info": false,
+        "preview": "HTTP 404"
+      },
+      "/openapi": {
+        "status": 404,
+        "content_type": "error",
+        "has_publisher_info": false,
+        "preview": "HTTP 404"
+      },
+      "/api/openapi": {
+        "status": 404,
+        "content_type": "error",
+        "has_publisher_info": false,
+        "preview": "HTTP 404"
+      },
+      "/v2/openapi": {
+        "status": 404,
+        "content_type": "error",
+        "has_publisher_info": false,
+        "preview": "HTTP 404"
+      },
+      "/metadata": {
+        "status": 404,
+        "content_type": "error",
+        "has_publisher_info": false,
+        "preview": "HTTP 404"
+      },
+      "/api/metadata": {
+        "status": 404,
+        "content_type": "error",
+        "has_publisher_info": false,
+        "preview": "HTTP 404"
+      },
+      "/v2/metadata": {
+        "status": 404,
+        "content_type": "error",
+        "has_publisher_info": false,
+        "preview": "HTTP 404"
+      },
+      "/info": {
+        "status": 404,
+        "content_type": "error",
+        "has_publisher_info": false,
+        "preview": "HTTP 404"
+      },
+      "/api/info": {
+        "status": 404,
+        "content_type": "error",
+        "has_publisher_info": false,
+        "preview": "HTTP 404"
+      },
+      "/v2/info": {
+        "status": 404,
+        "content_type": "error",
+        "has_publisher_info": false,
+        "preview": "HTTP 404"
+      },
+      "/health": {
+        "status": 404,
+        "content_type": "error",
+        "has_publisher_info": false,
+        "preview": "HTTP 404"
+      },
+      "/api/health": {
+        "status": 404,
+        "content_type": "error",
+        "has_publisher_info": false,
+        "preview": "HTTP 404"
+      },
+      "/v2/health": {
+        "status": 404,
+        "content_type": "error",
+        "has_publisher_info": false,
+        "preview": "HTTP 404"
+      },
+      "/status": {
+        "status": 404,
+        "content_type": "error",
+        "has_publisher_info": false,
+        "preview": "HTTP 404"
+      },
+      "/api/status": {
+        "status": 404,
+        "content_type": "error",
+        "has_publisher_info": false,
+        "preview": "HTTP 404"
+      },
+      "/v2/status": {
+        "status": 404,
+        "content_type": "error",
+        "has_publisher_info": false,
+        "preview": "HTTP 404"
+      }
+    },
+    "https://api.pyth.network": {
+      "/docs": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /docs (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10382f670>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/api/docs": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /api/docs (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383f2b0>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/v2/docs": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /v2/docs (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383fd00>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/swagger": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /swagger (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383fdc0>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/api/swagger": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /api/swagger (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383fdf0>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/v2/swagger": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /v2/swagger (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1037ade50>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/openapi": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /openapi (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10384c5e0>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/api/openapi": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /api/openapi (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10384c4f0>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/v2/openapi": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /v2/openapi (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10384c940>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/metadata": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /metadata (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10384cca0>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/api/metadata": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /api/metadata (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10384cf70>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/v2/metadata": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /v2/metadata (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103c2a310>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/info": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10384c640>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/api/info": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /api/info (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10384cca0>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/v2/info": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /v2/info (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10384c940>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/health": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /health (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10384c4f0>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/api/health": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /api/health (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10384c610>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/v2/health": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /v2/health (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1037adfa0>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/status": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /status (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383f730>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/api/status": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /api/status (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383fa90>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/v2/status": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='api.pyth.network', port=443): Max retries exceeded with url: /v2/status (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383fd60>: Failed to resolve 'api.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    },
+    "https://xc-mainnet.pyth.network": {
+      "/docs": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /docs (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383fc40>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/api/docs": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /api/docs (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10382f670>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/v2/docs": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /v2/docs (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103c2a700>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/swagger": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /swagger (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103c2a2e0>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/api/swagger": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /api/swagger (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103c2ac10>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/v2/swagger": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /v2/swagger (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10382f340>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/openapi": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /openapi (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383f670>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/api/openapi": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /api/openapi (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383f460>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/v2/openapi": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /v2/openapi (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383fb80>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/metadata": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /metadata (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383f4c0>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/api/metadata": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /api/metadata (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1037adbb0>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/v2/metadata": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /v2/metadata (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10384c820>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/info": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10384c550>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/api/info": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /api/info (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10384ca30>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/v2/info": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /v2/info (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10384cd90>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/health": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /health (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10384c640>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/api/health": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /api/health (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103c2a940>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/v2/health": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /v2/health (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103c2a6d0>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/status": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /status (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103c2afa0>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/api/status": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /api/status (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103c2a760>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      "/v2/status": {
+        "status": "error",
+        "content_type": "exception",
+        "has_publisher_info": false,
+        "preview": "HTTPSConnectionPool(host='xc-mainnet.pyth.network', port=443): Max retries exceeded with url: /v2/status (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103017b50>: Failed to resolve 'xc-mainnet.pyth.network' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    }
+  }
+}

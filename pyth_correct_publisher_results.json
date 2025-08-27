@@ -1,0 +1,502 @@
+[
+  {
+    "symbol": "KQ.068270/KRW",
+    "feed_id": "93e81db6a38f46deedb831550b15b910247b1314f911c3db24c0d97bb2ce52db",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "NEAR/USD",
+    "feed_id": "c415de8d2eba7db216527dff4b60e8f3a5311c740dadb233e13e12547e226750",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "HO/EUR",
+    "feed_id": "2a24f9bf70d9a9ff2397c99a47d1c5df919d7c1533252c5dd7406e41a550c258",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "CMETH/METH",
+    "feed_id": "cef5ad3be493afef85e77267cb0c07d048f3d54055409a34782996607e48cf0a",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "OBFR %",
+    "feed_id": "af83c3680722a0b0139414679efade7265f9f7e8e4aa91d233ca1d0a3aabaac6",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "MCO/USD",
+    "feed_id": "81ec776dd73898187779458dcd0c282a91322c7bd5fcb38b565f1b94bd8adff0",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "EDU/USD",
+    "feed_id": "c8593010ca5b82738a061887d22d42cd0b85861fa9d1677835070a43958090d0",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "STRK/USD",
+    "feed_id": "6a182399ff70ccf3e06024898942028204125a819e519a335ffa4579e66cd870",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "WSTKSCETH/SCETH",
+    "feed_id": "b680422b70915df562e4802bd8679112ff0f6b0a29ec2c3762ae2720eda01e58",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "MELI/USD",
+    "feed_id": "5c149158ad0cca240ab13e45d93f43d7eb747a25acf5a9313b5b03c0aa87251b",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "AOS/USD",
+    "feed_id": "7d981711db3d6a0b628823af5f51d8b94837b452aac6ed7da13fdbc227f6d9a8",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "DPZ/USD",
+    "feed_id": "ac8965f0ed1f9003909d9826d3fe783a45c5021bce71a40341d0ba06140c6431",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "MSOL/SOL",
+    "feed_id": "046e7c1cf187195ba3174028ab3be75be88382956f7d4d4b6b507e727370f284",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "OKB/USD",
+    "feed_id": "d6f83dfeaff95d596ddec26af2ee32f391c206a183b161b7980821860eeef2f5",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "KQ.042660/KRW",
+    "feed_id": "e5ea907c6d8c6e432ca5ac6df7d7a448a4fe2e6610ead99a8c0e20595c11efbb",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "BSOL/SOL",
+    "feed_id": "a90abc3ecdc402429a31d25972becc7d09975fc1e69f0995c030396efe298857",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "EUR/NZD",
+    "feed_id": "589174519ec8e38c11af84436f230bcf600fdb2c9c211303d0d578fda839ea60",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "CELR/USD",
+    "feed_id": "20841878a1c4d3ea4587603e2cb55b32afae64402f281652f5a3b94155ff27e9",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "HK.0101/HKD",
+    "feed_id": "2d47ac295f7156b2b3a724d31034b230ed7e74414ea3e642e2c7f4425cc0a8f4",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "HK.2331/HKD",
+    "feed_id": "a0f6917a0b53d31a33709c79237ea251ed4b3fcac27d9a65da225a7861bd87ff",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "NVR/USD",
+    "feed_id": "b8b6c23723982492c9e893684e2686af4c38eef7f58dc74a030b49a7c07996b7",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "JBHT/USD",
+    "feed_id": "27af75b9414384273378f90ccc53bec01dc8adf3662c4f7e6ec0645622af55bb",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "XLF/USD",
+    "feed_id": "06b884220ac5ac16fedfb03f84ec62b6e311241bc0af40ebfe4aedf462c18825",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "INF/GBP",
+    "feed_id": "597813341c4bc9f3c6c5538fa03dbabb1c1a971de9df3367409c9b6b648efa90",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "LOOP/USD",
+    "feed_id": "11ef99f21b54baf4d913b2c876437fcc773b8e2320f14b08875870e7b6721fd4",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "TAOHASH/USD",
+    "feed_id": "d1eea292e03d27a5368818ebf4c2704bf7b05ea18497b53be57e5d7abaeaade9",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "BR/USD",
+    "feed_id": "945c4b4ca2c3526335c4b559f7948620d54c80323a56db7b70f5333671fd2416",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "HIK/GBP",
+    "feed_id": "5a4159cbc9d623070fd6f70b9edb7bc4fdc9dcd1d9be2a30e9bb02fdce8eb09a",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "HK.9999/HKD",
+    "feed_id": "088415ee575b594758152ed1142774e878d70ef9b5b2b9a41202fb7a4fbb0f3a",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "HK.1038/HKD",
+    "feed_id": "d61292575b7bbf7c8e8c64be4b4b88e4a23b653265392c76a8a10ec8073d9c6a",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "STAN/GBP",
+    "feed_id": "3c38ca8a994518101b0c0f716f1cd8c9a6539ec685ac2dcab732e795a1d22f94",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "DSY/EUR",
+    "feed_id": "59656667085fef56ca1ef7de5db26d7e4302713ba3085d9992969ad84a4533c4",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "RHM/EUR",
+    "feed_id": "e549836c2eb0015f4423da6e596599a2ae2692e4457d1f53264258dc5f920490",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "PM/USD",
+    "feed_id": "a32f875eb39e23f087ea0db141b00857630c2c5011bfbe53a2a4d186f37cb583",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "WSTKSCUSD/SCUSD",
+    "feed_id": "caed0964240861da425cf03fae9737473f6f031fb80cbbd73c3fb8cddd7a2204",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "PYPL/USD",
+    "feed_id": "773c3b11f6be58e8151966a9f5832696d8cd08884ccc43ac8965a7ebea911533",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "ZEUS/USD",
+    "feed_id": "31558e9ccb18c151af6c52bf78afd03098a7aca1b9cf171a65b693b464c2f066",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "AV/GBP",
+    "feed_id": "c04c79e6ba7d90eefa087a70f606fdc3bfecadbbb2dacc9dbc5d68e26ba13002",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "AI/USD",
+    "feed_id": "afb12c5ccf50495c7a7b04447410d7feb4b3218a663ecbd96aa82e676d3c4f1e",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "TSLQ/USD",
+    "feed_id": "508439d4bbfac7632f640c74c6b7ace7f42c699393a588cb3bb236cfed001723",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "KQ.307950/KRW",
+    "feed_id": "ba13c5c38ce15067ffa501a122304977e03a9d6a77cef685041f5ef8fe2076a7",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "NDSN/USD",
+    "feed_id": "6727509d8f206c8615b61a01039caa23b45271196e603daebb0366d5e864666f",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "CTAS/USD",
+    "feed_id": "3aac822069ed803b272ade5510441f32b97501963cad9598ae61238bd8843aa5",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "RIOT/USD",
+    "feed_id": "46417522a59b245c5af35c33c13426d991b36514c4c85aaefe1cf787e7daad90",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "DLR/USD",
+    "feed_id": "5af7f961ea231d5f4bd19dc99d1fd43f6de67ab57b73779f9ebe65a6a4ab64d5",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "FTV/USD",
+    "feed_id": "8872d930ce5c58a3a4dab23a34e4bcdb6b0793573723c9a1945bcdd6e097b83c",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "WEIR/GBP",
+    "feed_id": "16191e61f0ae3ebbdaf568d9617ac572ca3ce3f4fd6c4759d5c2ddfb312b350f",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "STONE/ETH",
+    "feed_id": "7a508a94c9276cbc60d04e1a8cf839d20d835bb869a74487dfffa8f1bfd1ce42",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "CAT/USD",
+    "feed_id": "df7b724fae4b9ecfd6081effb1ea3bb3b5c250c3641cf903b4d8fb10f4f452df",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "AURORA/USD",
+    "feed_id": "2f7c4f738d498585065a4b87b637069ec99474597da7f0ca349ba8ac3ba9cac5",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "USR/USD",
+    "feed_id": "512a79cc65f49531f0bbb72956353e79ecdc1e4a6e5241847196c1f9a11d8a52",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "HK.0981/HKD",
+    "feed_id": "155d8e7ffcc9c67eb227d4adbd153ba69cfef803eeb077c902f9095bf1afae64",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "SGML/USD",
+    "feed_id": "860ec6bd0af204b8062322bd788857c9fe48d2b44239759a9f578997b1f4f38c",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "SPYX/USD",
+    "feed_id": "2817b78438c769357182c04346fddaad1178c82f4048828fe0997c3c64624e14",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "USDTB/USD",
+    "feed_id": "e4731214382d8ed70a766930a7722c68064fc7ed4e6d70dbce3c84d4be81bc92",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "USOL/USD",
+    "feed_id": "974c7a77dbace44d229be17fc176975e06404b004476aeaff37641818cb0c55a",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "FRXETH/USD",
+    "feed_id": "29240ee3a9024d107888eb1d4c527216f06bd64cee030c6b5575b1a8d77cb659",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "JUPSOL/SOL",
+    "feed_id": "f8d8d6b6c866c8b2624fb5b679ae846738725e5fc887fa8e927c8d8645018a2b",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "G/USD",
+    "feed_id": "0f6539d2f188eef5cb9dfba796f4c40407e55df14bb668a81a9ba3678d5a625c",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "TTE/EUR",
+    "feed_id": "0a95b77e60cf7f6dbcb902225259741fe6a3aebe07221390e79fcb05bbfdabb8",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "BLAST/USD",
+    "feed_id": "057345a7e9ef0f36dca8ad1c4e5788808b85f3084cc7b0d8cb29ac5012d88f0d",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "IDEX/USD",
+    "feed_id": "6fdf9f1b31f6212aad9125dbc9d85ae6cfac3939fd914f6a8c397f01272eca8f",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "MODE/USD",
+    "feed_id": "0386e113cc716a7c6a55decd97b19c90ce080d9f2f5255ac78a0e26889446d1e",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "HYPE/USD",
+    "feed_id": "4279e31cc369bbcc2faf022b382b080e32a8e689ff20fbc530d2a603eb6cd98b",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "NTRS/USD",
+    "feed_id": "f10492d0a522ca19f17cf8d54267abb2cca8ddb80d4bd528750223e3156a8aef",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "VTV/USD",
+    "feed_id": "1105e1af4587e6555349533492904782f6a4d0dc6b828938e98e1715b6b32315",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "PLUME/USD",
+    "feed_id": "ded84d57dbf810bf86b97936f12e1f01b8d6d01c251a4d6eac592147988d475c",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "BND/USD",
+    "feed_id": "ed8fb53acc8e6fada0885e9fca7b8bd15727ef6913fe10141d5cc51f73f6fc81",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "SOFR %",
+    "feed_id": "0f5fd558019a7cad9eaa012cd7228c65f2b7ed31db3f66ec557087a769df0f67",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "LBTC/BTC",
+    "feed_id": "bade5c63f281d36a13dbb64ed0ae1c532a434b6771b11885f396a41f56cc3bd0",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "JCI/USD",
+    "feed_id": "f6207ac0b3f712a3021a91f87ff0f03279e5df5126f4e9657f3e4cb3e18ab0f0",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "VIE/EUR",
+    "feed_id": "f1b15faa42f33b43041b4781de53a644dd840058947b843f99540876890e2236",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "SCA/USD",
+    "feed_id": "7e17f0ac105abe9214deb9944c30264f5986bf292869c6bd8e8da3ccd92d79bc",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "JUP/USD",
+    "feed_id": "0a0408d619e9380abad35060f9192039ed5042fa6f82301d0e48bb52be830996",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "EQIX/USD",
+    "feed_id": "66eb6cfa3a28e8e7cad538a55872ac0e41a2741ca66a29c1dc5540f2b1fb6fb6",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "NOOT/USD",
+    "feed_id": "dd8cdc412ede8e249be07e904e891e4b3a8bd1e1867dea16585ad4b2d0807eeb",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "ANKR/USD",
+    "feed_id": "89a58e1cab821118133d6831f5018fba5b354afb78b2d18f575b3cbf69a4f652",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "ETHFI/USD",
+    "feed_id": "b27578a9654246cb0a2950842b92330e9ace141c52b63829cc72d5c45a5a595a",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "HSIC/USD",
+    "feed_id": "8397ec3fb0eb764ecc05f530d6fcaa72731517fe919714f43f3bbf9387b1e669",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "HK.0017/HKD",
+    "feed_id": "add612726e57b1dbb7fdbb9a85de4ccb1e52edf1ce7c35fc672c5543db8c1a34",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "MTCH/USD",
+    "feed_id": "17106e7bc45a7a3c48db3eff47617a7eac3c67bd2e15dbee5285db744d3f2cd7",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "TAC/USD",
+    "feed_id": "f3d1e3fbe7944d9008cbc4e6390677d60ba1ea118f230570369355dc3780c7b4",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "VIC/USD",
+    "feed_id": "f80ba6864e3f1b36c873bcb2767079d5fb86cf04855e714b2a0f30d7e0830a24",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "VELO/USD",
+    "feed_id": "8b66bf97961dcd47336fe8467a4c7fd86e6c0bc77ebfbe91ab106a56d3a3513a",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "ABSTER/USD",
+    "feed_id": "a98bfb9501a843d1c048fd51e71e403da89df1e996016fd692332f835bef5778",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "JNJ/USD",
+    "feed_id": "12848738d5db3aef52f51d78d98fc8b8b8450ffb19fb3aeeb67d38f8c147ff63",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "ARC/USD",
+    "feed_id": "ac3d02825eef9c311197bcdd3ef789b2c7db97739af8f6aeca8374c55b022572",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "SHDW/USD",
+    "feed_id": "823df7874b35e0a6ad4f1f3a8298e1ec8bf3c20d188edbc1e2b56886adb73d38",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "HSOL/SOL",
+    "feed_id": "001764718ac7349c5a7f11d609b2235c3e36522e2672321abdf517676147c71b",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "ORDI/USD",
+    "feed_id": "193c739db502aadcef37c2589738b1e37bdb257d58cf1ab3c7ebc8e6df4e3ec0",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "VET/USD",
+    "feed_id": "1722176f738aa1aafea170f8b27724042c5ac6d8cb9cf8ae02d692b0927e0681",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "IP/USD",
+    "feed_id": "d7b753e70cea474508a2f0cd0ae5b7ac67662eb648a88afe68f04759464ccc8d",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "PRU/USD",
+    "feed_id": "6987f2cab2c2be6cb897220d99dd5665835e6d204f022d4b6d0701d9351b3138",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "ALLE/USD",
+    "feed_id": "f063ce6db3f3c237f248e51fe80cc4910fef79a8f0f3fc056b0d5b6a2bd450ba",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "SNX/USD",
+    "feed_id": "39d020f60982ed892abbcd4a06a276a9f9b7bfbce003204c110b6e488f502da3",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "XPD/USD",
+    "feed_id": "80367e9664197f37d89a07a804dffd2101c479c7c4e8490501bc9d9e1e7f9021",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "KAS/USD",
+    "feed_id": "dfd3cb51a9d39fde35a3ff6177b426def03ed48d45008248f22827d8bf50cab4",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "VEA/USD",
+    "feed_id": "11e972f7dcdb6158ae9812d60e37a227a27d3f3aab5982f35d3208b9cd3748c5",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "SMT/GBP",
+    "feed_id": "fbceeec3e08fa0907cd5790f1ca32ebfa31dc45d619fecd6186b1dab0ff7c4a3",
+    "publisher_count": 33254
+  },
+  {
+    "symbol": "GEV/USD",
+    "feed_id": "57e28b0f0ab18923f5c987629c0c714b9b46c87e729ed95ed6e23e466e8d1e0c",
+    "publisher_count": 33254
+  }
+]

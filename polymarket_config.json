@@ -1,0 +1,27 @@
+{
+  "check_interval": 60,
+  "max_markets_per_check": 100,
+  "enable_new_market_alerts": true,
+  "enable_market_updates": false,
+  "base_url": "https://clob.polymarket.com",
+  "markets_url": "https://clob.polymarket.com/markets",
+  "log_level": "INFO",
+  "log_file": "polymarket_monitor.log",
+  "cache_file": "polymarket_known_markets.json",
+  "cache_backup_count": 5,
+  "alert_templates": {
+    "new_market": {
+      "emoji": "🚨",
+      "title": "새로운 폴리마켓 마켓 발견!",
+      "include_volume": true,
+      "include_participants": true,
+      "include_expiration": true
+    },
+    "market_update": {
+      "emoji": "📈",
+      "title": "폴리마켓 마켓 업데이트",
+      "include_volume_change": true,
+      "include_participants": true
+    }
+  }
+}

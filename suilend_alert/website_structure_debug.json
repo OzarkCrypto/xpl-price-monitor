@@ -1,0 +1,832 @@
+{
+  "title": "Web3项目列表_RootData",
+  "url": "https://cn.rootdata.com/Projects",
+  "classes": [
+    "IconReward",
+    "IconReward-box",
+    "active",
+    "ad-flag",
+    "ad-global-dialog",
+    "ad-global-dialog-left",
+    "ad_banner",
+    "align-center",
+    "align_left",
+    "align_right",
+    "animation_underline",
+    "arrow",
+    "avatar-m-wrap",
+    "avatar-wrap",
+    "b-table",
+    "b-table-fixed",
+    "b-table-sticky-column",
+    "bar-link",
+    "bg",
+    "box",
+    "box-body",
+    "box-top",
+    "btn",
+    "btn-next",
+    "btn-prev",
+    "btn-quicknext",
+    "candy",
+    "card-bg",
+    "card-btn",
+    "card-btns",
+    "card-content",
+    "card-main",
+    "card-qrcode",
+    "card-text",
+    "card-text-active",
+    "chain_list",
+    "circular",
+    "close",
+    "coin",
+    "common-v-carousel",
+    "confirm",
+    "connectwallet-btn",
+    "content",
+    "controller_bar",
+    "controller_item_scroller",
+    "d-flex",
+    "d-md-block",
+    "d-md-flex",
+    "d-md-none",
+    "d-none",
+    "def_nav",
+    "download-app-card",
+    "download_app",
+    "download_popper",
+    "download_text",
+    "el-checkbox",
+    "el-checkbox-group",
+    "el-checkbox__inner",
+    "el-checkbox__input",
+    "el-checkbox__label",
+    "el-checkbox__original",
+    "el-collapse",
+    "el-collapse-item",
+    "el-collapse-item__arrow",
+    "el-collapse-item__content",
+    "el-collapse-item__header",
+    "el-collapse-item__wrap",
+    "el-icon",
+    "el-icon-arrow-down",
+    "el-icon-arrow-left",
+    "el-icon-arrow-right",
+    "el-icon-moon",
+    "el-icon-more",
+    "el-input",
+    "el-input__inner",
+    "el-loading-mask",
+    "el-loading-spinner",
+    "el-pager",
+    "el-pagination",
+    "el-pagination__editor",
+    "el-pagination__jump",
+    "el-pagination__total",
+    "el-popover",
+    "el-popover--plain",
+    "el-popover__reference",
+    "el-popover__reference-wrapper",
+    "el-popper",
+    "el-radio",
+    "el-radio-group",
+    "el-radio__inner",
+    "el-radio__input",
+    "el-radio__label",
+    "el-radio__original",
+    "el-scrollbar",
+    "el-scrollbar__bar",
+    "el-scrollbar__thumb",
+    "el-scrollbar__view",
+    "el-scrollbar__wrap",
+    "el-tooltip",
+    "filter_btn",
+    "filters",
+    "filters_con",
+    "flex-column",
+    "flex-grow-1",
+    "flex-row",
+    "flex-shrink-0",
+    "global-loading",
+    "head",
+    "head_right_download",
+    "head_right_download_qrcode",
+    "head_right_rewards",
+    "header-bar",
+    "header-bar-content",
+    "header_right",
+    "icon-close",
+    "img-dark-compat",
+    "img-tips",
+    "img_wrap",
+    "index-item",
+    "input",
+    "intro",
+    "is-active",
+    "is-background",
+    "is-checked",
+    "is-horizontal",
+    "is-in-pagination",
+    "is-vertical",
+    "justify-center",
+    "justify-end",
+    "justify-space-between",
+    "lang_text",
+    "layout-side-menu",
+    "list_name",
+    "login",
+    "login_btn",
+    "login_wrap",
+    "logo",
+    "logout",
+    "main_container",
+    "main_padding",
+    "mdi",
+    "mdi-chevron-left",
+    "mdi-close",
+    "menu-container",
+    "menu-drawer",
+    "menu-head",
+    "menu-head-left",
+    "menu-head-right",
+    "menu-icon",
+    "menu-item",
+    "menu-list",
+    "menu-main",
+    "menu-main-left",
+    "menu-name",
+    "menu-point",
+    "menu-user",
+    "menu-user-info",
+    "menu-user-main",
+    "ml-0",
+    "ml-1",
+    "ml-2",
+    "ml-4",
+    "mobile_header",
+    "mobile_nav",
+    "mobile_nav_btns",
+    "mobile_nav_wrap",
+    "mobile_sort",
+    "more",
+    "mr-1",
+    "mr-2",
+    "mr-4",
+    "mt-3",
+    "mt-4",
+    "my-6",
+    "nav",
+    "nav_active",
+    "nav_bar",
+    "nav_list",
+    "navbar_pc",
+    "new_icon",
+    "notranslate",
+    "number",
+    "nuxt-link-active",
+    "nuxt-link-exact-active",
+    "pagination-container",
+    "path",
+    "pb-3",
+    "pc_header",
+    "pc_header_content",
+    "pl-0",
+    "pl-2",
+    "pl-4",
+    "point-label",
+    "point-val",
+    "points-tips",
+    "position-relative",
+    "pr-2",
+    "pr-4",
+    "r-text",
+    "rbb-devide",
+    "rbb-group",
+    "rd-tag-select",
+    "rds-list",
+    "rds-list-item",
+    "rds-sub",
+    "rds-sub-list",
+    "rds-title",
+    "rg-list-wrapper",
+    "rg-tag-popover",
+    "rli_label",
+    "round",
+    "rounded-lg",
+    "rounded_popper",
+    "rts-bottom-box",
+    "rts-searchtext",
+    "rts_label",
+    "rts_tag",
+    "scroll_bar",
+    "search-box",
+    "search-col",
+    "searchbar",
+    "searchbar-key",
+    "searchbar-text",
+    "show_xs",
+    "signin-m-wrap",
+    "signin-wrap",
+    "singe-line",
+    "size-h-78",
+    "sr-only",
+    "symbol",
+    "table",
+    "table-b-table-default",
+    "table-borderless",
+    "table-compat-sort",
+    "table-compat-sticky",
+    "table-responsive",
+    "tag_list",
+    "theme--dark",
+    "theme--light",
+    "theme-switch",
+    "tip_popper",
+    "toast",
+    "toast-self",
+    "u-bindtip",
+    "u-bindtip-text",
+    "u-name",
+    "v-app-bar",
+    "v-app-bar--clipped",
+    "v-app-bar--fixed",
+    "v-application",
+    "v-application--is-ltr",
+    "v-application--wrap",
+    "v-avatar",
+    "v-btn",
+    "v-btn--has-bg",
+    "v-btn--router",
+    "v-btn--text",
+    "v-btn__content",
+    "v-carousel",
+    "v-carousel--hide-delimiter-background",
+    "v-carousel__item",
+    "v-dialog__container",
+    "v-icon",
+    "v-icon--link",
+    "v-image",
+    "v-input",
+    "v-input--dense",
+    "v-input--hide-details",
+    "v-input__append-inner",
+    "v-input__control",
+    "v-input__prepend-inner",
+    "v-input__slot",
+    "v-item-group",
+    "v-main",
+    "v-main__wrap",
+    "v-menu",
+    "v-messages",
+    "v-messages__wrapper",
+    "v-navigation-drawer",
+    "v-navigation-drawer--clipped",
+    "v-navigation-drawer--close",
+    "v-navigation-drawer--fixed",
+    "v-navigation-drawer--open",
+    "v-navigation-drawer--right",
+    "v-navigation-drawer--temporary",
+    "v-navigation-drawer__border",
+    "v-navigation-drawer__content",
+    "v-responsive",
+    "v-responsive__content",
+    "v-sheet",
+    "v-size--default",
+    "v-snack",
+    "v-snack--bottom",
+    "v-snack--centered",
+    "v-snack--has-background",
+    "v-snack__action",
+    "v-snack__content",
+    "v-snack__wrapper",
+    "v-text-field",
+    "v-text-field--enclosed",
+    "v-text-field--filled",
+    "v-text-field--is-booted",
+    "v-text-field--placeholder",
+    "v-text-field--single-line",
+    "v-text-field--solo",
+    "v-text-field__details",
+    "v-text-field__slot",
+    "v-toolbar",
+    "v-toolbar--flat",
+    "v-toolbar__content",
+    "v-window",
+    "v-window-item",
+    "v-window__container",
+    "w150",
+    "w160",
+    "watermusk_center",
+    "white"
+  ],
+  "hot_classes": [
+    "index-item"
+  ],
+  "headings": [
+    "RootData免费推送：提交首发融资信息，审核通过后即可享App推送服务。 [立即联系]"
+  ],
+  "links": [
+    {
+      "text": "[立即联系]",
+      "href": "mailto:quanyu@rootdata.com"
+    },
+    {
+      "text": "API",
+      "href": "https://cn.rootdata.com/Api"
+    },
+    {
+      "text": "Points",
+      "href": "https://cn.rootdata.com/points"
+    },
+    {
+      "text": "登录",
+      "href": "https://cn.rootdata.com/login?fromUrl=%2FProjects"
+    },
+    {
+      "text": "投融资",
+      "href": "https://cn.rootdata.com/Fundraising"
+    },
+    {
+      "text": "项目",
+      "href": "https://cn.rootdata.com/Projects"
+    },
+    {
+      "text": "日历",
+      "href": "https://cn.rootdata.com/calendar"
+    },
+    {
+      "text": "行情",
+      "href": "https://cn.rootdata.com/Market"
+    },
+    {
+      "text": "人物",
+      "href": "https://cn.rootdata.com/people"
+    },
+    {
+      "text": "更多",
+      "href": "javascript:void(0)"
+    },
+    {
+      "text": "June",
+      "href": "https://cn.rootdata.com/Projects/detail/June?k=MjA3Mjg%3D"
+    },
+    {
+      "text": "HuchHUCH",
+      "href": "https://cn.rootdata.com/Projects/detail/Huch?k=MjA3MjU%3D"
+    },
+    {
+      "text": "BitBit",
+      "href": "https://cn.rootdata.com/Projects/detail/BitBit?k=MjA3MjQ%3D"
+    },
+    {
+      "text": "radFi",
+      "href": "https://cn.rootdata.com/Projects/detail/radFi?k=MjA3MjM%3D"
+    },
+    {
+      "text": "AsiaStrategy",
+      "href": "https://cn.rootdata.com/Projects/detail/AsiaStrategy?k=MjA2OTM%3D"
+    },
+    {
+      "text": "Creditlink",
+      "href": "https://cn.rootdata.com/Projects/detail/Creditlink?k=MjA2ODY%3D"
+    },
+    {
+      "text": "modulr.cloud",
+      "href": "https://cn.rootdata.com/Projects/detail/modulr.cloud?k=MjA2ODU%3D"
+    },
+    {
+      "text": "Membit",
+      "href": "https://cn.rootdata.com/Projects/detail/Membit?k=MjA2ODQ%3D"
+    },
+    {
+      "text": "giv.fun",
+      "href": "https://cn.rootdata.com/Projects/detail/giv.fun?k=MjA2ODM%3D"
+    },
+    {
+      "text": "Verso",
+      "href": "https://cn.rootdata.com/Projects/detail/Verso?k=MjA2NjI%3D"
+    },
+    {
+      "text": "Gloom",
+      "href": "https://cn.rootdata.com/Projects/detail/Gloom?k=MjA2NTk%3D"
+    },
+    {
+      "text": "YZY MoneyYZY",
+      "href": "https://cn.rootdata.com/Projects/detail/YZY%20Money?k=MjA2NTg%3D"
+    },
+    {
+      "text": "Pubhouse",
+      "href": "https://cn.rootdata.com/Projects/detail/Pubhouse?k=MjA2NTc%3D"
+    },
+    {
+      "text": "Sherpa",
+      "href": "https://cn.rootdata.com/Projects/detail/Sherpa?k=MjA2NTQ%3D"
+    },
+    {
+      "text": "Aifi ProtocolAIFI",
+      "href": "https://cn.rootdata.com/Projects/detail/Aifi%20Protocol?k=MjA2MjY%3D"
+    },
+    {
+      "text": "Bounce on BaseBOUNCE",
+      "href": "https://cn.rootdata.com/Projects/detail/Bounce%20on%20Base?k=MjA2MjQ%3D"
+    },
+    {
+      "text": "Aubrai",
+      "href": "https://cn.rootdata.com/Projects/detail/Aubrai?k=MjA2MDQ%3D"
+    },
+    {
+      "text": "Brunch Finance",
+      "href": "https://cn.rootdata.com/Projects/detail/Brunch%20Finance?k=MjA2MDI%3D"
+    },
+    {
+      "text": "RightUp",
+      "href": "https://cn.rootdata.com/Projects/detail/RightUp?k=MjA1ODQ%3D"
+    },
+    {
+      "text": "backr.fun",
+      "href": "https://cn.rootdata.com/Projects/detail/backr.fun?k=MjA1ODM%3D"
+    },
+    {
+      "text": "Fork ChainFORK",
+      "href": "https://cn.rootdata.com/Projects/detail/Fork%20Chain?k=MjA1ODI%3D"
+    },
+    {
+      "text": "blind",
+      "href": "https://cn.rootdata.com/Projects/detail/blind?k=MjA1ODA%3D"
+    },
+    {
+      "text": "SEKAI",
+      "href": "https://cn.rootdata.com/Projects/detail/SEKAI?k=MjA1Nzk%3D"
+    },
+    {
+      "text": "Bitcoin Treasury Capital",
+      "href": "https://cn.rootdata.com/Projects/detail/Bitcoin%20Treasury%20Capital?k=MjA1NzQ%3D"
+    },
+    {
+      "text": "Lithos",
+      "href": "https://cn.rootdata.com/Projects/detail/Lithos?k=MjA1NzE%3D"
+    },
+    {
+      "text": "TrueFlow",
+      "href": "https://cn.rootdata.com/Projects/detail/TrueFlow?k=MjA1NzA%3D"
+    },
+    {
+      "text": "BRRR",
+      "href": "https://cn.rootdata.com/Projects/detail/BRRR?k=MjA1NTA%3D"
+    },
+    {
+      "text": "Solana Reserve",
+      "href": "https://cn.rootdata.com/Projects/detail/Solana%20Reserve?k=MjA1NDk%3D"
+    },
+    {
+      "text": "Valis Research",
+      "href": "https://cn.rootdata.com/Projects/detail/Valis%20Research?k=MjA1NDg%3D"
+    },
+    {
+      "text": "z.ink",
+      "href": "https://cn.rootdata.com/Projects/detail/z.ink?k=MjA1MDg%3D"
+    }
+  ],
+  "js_vars": {
+    "$nuxt": {
+      "keys": [
+        "_uid",
+        "_isVue",
+        "__v_skip",
+        "_scope",
+        "$options"
+      ],
+      "type": "object"
+    },
+    "__NUXT__": {
+      "keys": [
+        "layout",
+        "data",
+        "fetch",
+        "error",
+        "state"
+      ],
+      "type": "object"
+    },
+    "__core-js_shared__": {
+      "keys": [
+        "versions",
+        "native-function-to-string",
+        "wks",
+        "keys",
+        "symbol-registry"
+      ],
+      "type": "object"
+    },
+    "_ethers": {
+      "keys": [
+        "Signer",
+        "Wallet",
+        "VoidSigner",
+        "getDefaultProvider",
+        "providers"
+      ],
+      "type": "object"
+    },
+    "caches": {
+      "keys": [],
+      "type": "object"
+    },
+    "cdc_adoQpoasnfa76pfcZLmcfl_JSON": {
+      "keys": [],
+      "type": "object"
+    },
+    "chrome": {
+      "keys": [
+        "loadTimes",
+        "csi",
+        "app"
+      ],
+      "type": "object"
+    },
+    "clientInformation": {
+      "keys": [],
+      "type": "object"
+    },
+    "cookieStore": {
+      "keys": [],
+      "type": "object"
+    },
+    "core": {
+      "keys": [
+        "version",
+        "inspectSource",
+        "Array",
+        "prototype",
+        "Object"
+      ],
+      "type": "object"
+    },
+    "crypto": {
+      "keys": [],
+      "type": "object"
+    },
+    "customElements": {
+      "keys": [],
+      "type": "object"
+    },
+    "dataLayer": {
+      "length": 6,
+      "sample": {
+        "event": "gtm.js",
+        "gtm.start": 1756100458772,
+        "gtm.uniqueEventId": 3
+      },
+      "type": "array"
+    },
+    "document": {
+      "keys": [
+        "location"
+      ],
+      "type": "object"
+    },
+    "documentPictureInPicture": {
+      "keys": [],
+      "type": "object"
+    },
+    "external": {
+      "keys": [],
+      "type": "object"
+    },
+    "frames": {
+      "keys": [
+        "window",
+        "self",
+        "document",
+        "name",
+        "location"
+      ],
+      "type": "object"
+    },
+    "gaGlobal": {
+      "keys": [
+        "vid",
+        "from_cookie"
+      ],
+      "type": "object"
+    },
+    "google_tag_data": {
+      "keys": [
+        "tidr",
+        "xcd",
+        "uach_promise",
+        "ics",
+        "uach"
+      ],
+      "type": "object"
+    },
+    "google_tag_manager": {
+      "keys": [
+        "debugGroupId",
+        "tcf",
+        "pscdl",
+        "GTM-PBF39BBC",
+        "dataLayer"
+      ],
+      "type": "object"
+    },
+    "gsapVersions": {
+      "length": 1,
+      "sample": "3.12.4",
+      "type": "array"
+    },
+    "history": {
+      "keys": [
+        "pushState",
+        "replaceState"
+      ],
+      "type": "object"
+    },
+    "indexedDB": {
+      "keys": [],
+      "type": "object"
+    },
+    "launchQueue": {
+      "keys": [],
+      "type": "object"
+    },
+    "localStorage": {
+      "keys": [],
+      "type": "object"
+    },
+    "location": {
+      "keys": [
+        "ancestorOrigins",
+        "href",
+        "origin",
+        "protocol",
+        "host"
+      ],
+      "type": "object"
+    },
+    "locationbar": {
+      "keys": [],
+      "type": "object"
+    },
+    "menubar": {
+      "keys": [],
+      "type": "object"
+    },
+    "navigation": {
+      "keys": [],
+      "type": "object"
+    },
+    "navigator": {
+      "keys": [],
+      "type": "object"
+    },
+    "onNuxtReadyCbs": {
+      "keys": [],
+      "type": "object"
+    },
+    "parent": {
+      "keys": [
+        "window",
+        "self",
+        "document",
+        "name",
+        "location"
+      ],
+      "type": "object"
+    },
+    "performance": {
+      "keys": [],
+      "type": "object"
+    },
+    "personalbar": {
+      "keys": [],
+      "type": "object"
+    },
+    "regeneratorRuntime": {
+      "keys": [
+        "wrap",
+        "isGeneratorFunction",
+        "mark",
+        "awrap",
+        "AsyncIterator"
+      ],
+      "type": "object"
+    },
+    "ret_nodes": {
+      "keys": [],
+      "type": "object"
+    },
+    "scheduler": {
+      "keys": [],
+      "type": "object"
+    },
+    "screen": {
+      "keys": [],
+      "type": "object"
+    },
+    "scrollbars": {
+      "keys": [],
+      "type": "object"
+    },
+    "self": {
+      "keys": [
+        "window",
+        "self",
+        "document",
+        "name",
+        "location"
+      ],
+      "type": "object"
+    },
+    "sessionStorage": {
+      "keys": [],
+      "type": "object"
+    },
+    "sharedStorage": {
+      "keys": [],
+      "type": "object"
+    },
+    "speechSynthesis": {
+      "keys": [],
+      "type": "object"
+    },
+    "statusbar": {
+      "keys": [],
+      "type": "object"
+    },
+    "styleMedia": {
+      "keys": [],
+      "type": "object"
+    },
+    "toolbar": {
+      "keys": [],
+      "type": "object"
+    },
+    "top": {
+      "keys": [
+        "window",
+        "self",
+        "document",
+        "name",
+        "location"
+      ],
+      "type": "object"
+    },
+    "trustedTypes": {
+      "keys": [],
+      "type": "object"
+    },
+    "viewport": {
+      "keys": [],
+      "type": "object"
+    },
+    "visualViewport": {
+      "keys": [],
+      "type": "object"
+    },
+    "webpackJsonp": {
+      "length": 19,
+      "sample": [
+        [
+          346,
+          228
+        ],
+        {
+          "2226": {},
+          "2349": {},
+          "2447": {},
+          "2667": {},
+          "2699": {},
+          "3287": {},
+          "3288": {},
+          "3769": {},
+          "3770": {},
+          "3771": {},
+          "4387": {},
+          "4388": {},
+          "4389": {},
+          "4390": {},
+          "4957": {},
+          "4958": {},
+          "5708": {},
+          "5709": {}
+        }
+      ],
+      "type": "array"
+    },
+    "window": {
+      "keys": [
+        "window",
+        "self",
+        "document",
+        "name",
+        "location"
+      ],
+      "type": "object"
+    }
+  },
+  "hot_text_lines": [
+    "通过比特币创造价值（Spotlight Stock Market：$BTC B 和Frankfurt Stock Exchange ：$X 4L）"
+  ]
+}

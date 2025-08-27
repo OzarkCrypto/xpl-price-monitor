@@ -1,0 +1,19 @@
+{
+  "bot_name": "Crypto Fundraising Monitor",
+  "bot_username": "crypto_fundraising_bot",
+  "description": "자동으로 crypto-fundraising.info의 신규 프로젝트를 모니터링하고 텔레그램으로 요약을 전송하는 봇",
+  "commands": [
+    {
+      "command": "start",
+      "description": "봇 시작"
+    },
+    {
+      "command": "help",
+      "description": "도움말"
+    },
+    {
+      "command": "status",
+      "description": "현재 상태 확인"
+    }
+  ]
+}
