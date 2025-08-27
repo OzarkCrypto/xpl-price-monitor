@@ -1,6 +1,4 @@
 import json
-import requests
-from datetime import datetime
 
 def handler(request, context):
     """Vercel 서버리스 함수 핸들러"""
@@ -18,7 +16,28 @@ def handler(request, context):
             }
         
         elif path == '/api/prices':
-            data = get_price_data()
+            # 정적 데이터 반환 (실제 API 호출은 프론트엔드에서)
+            data = {
+                'binance': {
+                    'price': 0.575,
+                    'exchange': 'Binance Futures',
+                    'url': 'https://www.binance.com/en/futures/XPLUSDT'
+                },
+                'hyperliquid': {
+                    'price': 0.735,
+                    'exchange': 'Hyperliquid',
+                    'url': 'https://app.hyperliquid.xyz/trade'
+                },
+                'gap': {
+                    'absolute': 0.160,
+                    'percentage': 27.83,
+                    'status': 'high'
+                },
+                'last_update': '2025-08-27T20:00:00',
+                'seconds_ago': 0,
+                'timestamp': '2025-08-27T20:00:00'
+            }
+            
             return {
                 'statusCode': 200,
                 'headers': {
@@ -29,7 +48,7 @@ def handler(request, context):
             }
         
         elif path == '/api/update':
-            data = update_prices()
+            data = {'success': True, 'message': '가격이 업데이트되었습니다.'}
             return {
                 'statusCode': 200,
                 'headers': {
@@ -50,98 +69,6 @@ def handler(request, context):
             'statusCode': 500,
             'body': f'Internal Server Error: {str(e)}'
         }
-
-def get_binance_xpl_price():
-    """Binance에서 XPL 가격을 가져옵니다."""
-    try:
-        url = "https://fapi.binance.com/fapi/v1/ticker/price"
-        params = {'symbol': 'XPLUSDT'}
-        
-        response = requests.get(url, params=params, timeout=10)
-        response.raise_for_status()
-        
-        data = response.json()
-        price = float(data['price'])
-        return price
-        
-    except Exception as e:
-        print(f"Binance API 오류: {e}")
-        return None
-
-def get_hyperliquid_xpl_price():
-    """Hyperliquid에서 XPL 가격을 가져옵니다."""
-    try:
-        url = "https://api.hyperliquid.xyz/info"
-        payload = {"type": "allMids"}
-        
-        response = requests.post(url, json=payload, timeout=10)
-        response.raise_for_status()
-        
-        data = response.json()
-        
-        if 'XPL' in data:
-            xpl_price = float(data['XPL'])
-            return xpl_price
-        else:
-            return None
-            
-    except Exception as e:
-        print(f"Hyperliquid API 오류: {e}")
-        return None
-
-def calculate_gap(binance_price, hyperliquid_price):
-    """가격 갭을 계산합니다."""
-    if binance_price is None or hyperliquid_price is None:
-        return {
-            'absolute': None,
-            'percentage': None,
-            'status': 'unknown'
-        }
-    
-    absolute_gap = abs(hyperliquid_price - binance_price)
-    percentage_gap = (absolute_gap / binance_price) * 100
-    
-    if percentage_gap < 1:
-        status = 'low'
-    elif percentage_gap < 5:
-        status = 'medium'
-    else:
-        status = 'high'
-    
-    return {
-        'absolute': round(absolute_gap, 6),
-        'percentage': round(percentage_gap, 2),
-        'status': status
-    }
-
-def get_price_data():
-    """현재 가격 데이터를 반환합니다."""
-    binance_price = get_binance_xpl_price()
-    hyperliquid_price = get_hyperliquid_xpl_price()
-    
-    gap = calculate_gap(binance_price, hyperliquid_price)
-    current_time = datetime.now()
-    
-    return {
-        'binance': {
-            'price': binance_price,
-            'exchange': 'Binance Futures',
-            'url': 'https://www.binance.com/en/futures/XPLUSDT'
-        },
-        'hyperliquid': {
-            'price': hyperliquid_price,
-            'exchange': 'Hyperliquid',
-            'url': 'https://app.hyperliquid.xyz/trade'
-        },
-        'gap': gap,
-        'last_update': current_time.isoformat(),
-        'seconds_ago': 0,
-        'timestamp': current_time.isoformat()
-    }
-
-def update_prices():
-    """가격을 업데이트합니다."""
-    return {'success': True, 'message': '가격이 업데이트되었습니다.'}
 
 def get_html_content():
     """HTML 콘텐츠를 반환합니다."""
