@@ -145,26 +145,95 @@
                     </button>
                 </div>
                 
-                <div class="text-center mt-4">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p class="last-update">
-                                마지막 업데이트: <span id="lastUpdate">-</span>
-                            </p>
+                                    <div class="text-center mt-4">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="last-update">
+                                    마지막 업데이트: <span id="lastUpdate">-</span>
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="last-update">
+                                    <span id="secondsAgo">-</span>초 전
+                                </p>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <p class="last-update">
-                                <span id="secondsAgo">-</span>초 전
-                            </p>
+                        
+                        <!-- 알림 설정 정보 -->
+                        <div class="row mt-3">
+                            <div class="col-12">
+                                <div class="card" style="background: #0a0a0a; border-color: #333333;">
+                                    <div class="card-body">
+                                        <h6 class="card-title text-warning">📞 전화 알림 설정</h6>
+                                        <div class="row text-center">
+                                            <div class="col-md-6">
+                                                <small class="text-muted">
+                                                    Hyperliquid XPL ≥ $1.0<br>
+                                                    <span class="text-info">010-3317-4920</span>
+                                                </small>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <small class="text-muted">
+                                                    가격 갭 ≥ 45%<br>
+                                                    <span class="text-info">010-3317-4920</span>
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     </div>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            // 전화 알림 시스템
+            let lastAlertTime = 0;
+            const ALERT_COOLDOWN = 60000; // 1분 쿨다운
+            
+            function makePhoneCall(phoneNumber) {
+                // 전화 앱 열기
+                window.location.href = `tel:${phoneNumber}`;
+            }
+            
+            function showAlert(message, isUrgent = false) {
+                const now = Date.now();
+                if (now - lastAlertTime < ALERT_COOLDOWN) {
+                    return; // 쿨다운 중
+                }
+                
+                lastAlertTime = now;
+                
+                // 알림 표시
+                const alertDiv = document.createElement('div');
+                alertDiv.className = `alert ${isUrgent ? 'alert-danger' : 'alert-warning'} alert-dismissible fade show position-fixed`;
+                alertDiv.style.cssText = 'top: 20px; right: 20px; z-index: 9999; min-width: 300px;';
+                alertDiv.innerHTML = `
+                    <strong>${isUrgent ? '🚨 긴급 알림' : '⚠️ 주의'}</strong> ${message}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                `;
+                
+                document.body.appendChild(alertDiv);
+                
+                // 자동으로 사라지게
+                setTimeout(() => {
+                    if (alertDiv.parentNode) {
+                        alertDiv.remove();
+                    }
+                }, 10000);
+                
+                // 긴급한 경우 전화 알림
+                if (isUrgent) {
+                    setTimeout(() => {
+                        if (confirm('긴급 상황입니다! 010-3317-4920으로 전화를 걸까요?')) {
+                            makePhoneCall('010-3317-4920');
+                        }
+                    }, 2000);
+                }
+            }
         let updateInterval;
         
         async function getBinancePrice() {
@@ -227,6 +296,11 @@
             // Hyperliquid 가격 표시
             if (hyperliquidPrice !== null) {
                 document.getElementById('hyperliquidPrice').textContent = '$' + hyperliquidPrice.toFixed(6);
+                
+                // Hyperliquid 가격 1 이상 체크
+                if (hyperliquidPrice >= 1.0) {
+                    showAlert(`Hyperliquid XPL 가격이 $${hyperliquidPrice.toFixed(6)}로 1.0 이상입니다!`, true);
+                }
             } else {
                 document.getElementById('hyperliquidPrice').textContent = '오류';
             }
@@ -237,6 +311,11 @@
             if (gap.absolute !== null) {
                 document.getElementById('absoluteGap').textContent = '$' + gap.absolute.toFixed(6);
                 document.getElementById('relativeGap').textContent = gap.percentage.toFixed(2) + '%';
+                
+                // 갭 45% 이상 체크
+                if (gap.percentage >= 45.0) {
+                    showAlert(`가격 갭이 ${gap.percentage.toFixed(2)}%로 45% 이상입니다!`, true);
+                }
                 
                 const statusElement = document.getElementById('gapStatus');
                 const descriptionElement = document.getElementById('gapDescription');
