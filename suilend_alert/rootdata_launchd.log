@@ -29929,3 +29929,68 @@ chasanghun       80306   0.0  0.0 411101504   1248 s027  S     1:21PM   0:01.37 
 🔄 재시작: ./restart_rootdata_daemon.sh
 
 💡 이제 노트북을 끄거나 커서를 끄도 모니터가 계속 실행됩니다!
+🚀 Rootdata Hot Index 모니터 데몬 시작
+======================================
+📦 필요한 패키지 확인 중...
+🔄 백그라운드에서 모니터 실행 중...
+✅ 모니터가 백그라운드에서 실행되었습니다!
+📊 프로세스 ID: 23458
+📝 로그 파일: rootdata_background.log
+
+🔍 상태 확인: ./check_rootdata_status.sh
+🛑 중지: ./stop_rootdata_daemon.sh
+🔄 재시작: ./restart_rootdata_daemon.sh
+
+💡 이제 노트북을 끄거나 커서를 끄도 모니터가 계속 실행됩니다!
+🚀 Rootdata Hot Index 모니터 데몬 시작
+======================================
+📦 필요한 패키지 확인 중...
+🔄 백그라운드에서 모니터 실행 중...
+✅ 모니터가 백그라운드에서 실행되었습니다!
+📊 프로세스 ID: 23490
+📝 로그 파일: rootdata_background.log
+
+🔍 상태 확인: ./check_rootdata_status.sh
+🛑 중지: ./stop_rootdata_daemon.sh
+🔄 재시작: ./restart_rootdata_daemon.sh
+
+💡 이제 노트북을 끄거나 커서를 끄도 모니터가 계속 실행됩니다!
+🚀 Rootdata Hot Index 모니터 데몬 시작
+======================================
+📦 필요한 패키지 확인 중...
+🔄 백그라운드에서 모니터 실행 중...
+✅ 모니터가 백그라운드에서 실행되었습니다!
+📊 프로세스 ID: 23510
+📝 로그 파일: rootdata_background.log
+
+🔍 상태 확인: ./check_rootdata_status.sh
+🛑 중지: ./stop_rootdata_daemon.sh
+🔄 재시작: ./restart_rootdata_daemon.sh
+
+💡 이제 노트북을 끄거나 커서를 끄도 모니터가 계속 실행됩니다!
+🚀 Rootdata Hot Index 모니터 데몬 시작
+======================================
+📦 필요한 패키지 확인 중...
+🔄 백그라운드에서 모니터 실행 중...
+✅ 모니터가 백그라운드에서 실행되었습니다!
+📊 프로세스 ID: 23548
+📝 로그 파일: rootdata_background.log
+
+🔍 상태 확인: ./check_rootdata_status.sh
+🛑 중지: ./stop_rootdata_daemon.sh
+🔄 재시작: ./restart_rootdata_daemon.sh
+
+💡 이제 노트북을 끄거나 커서를 끄도 모니터가 계속 실행됩니다!
+🚀 Rootdata Hot Index 모니터 데몬 시작
+======================================
+📦 필요한 패키지 확인 중...
+🔄 백그라운드에서 모니터 실행 중...
+✅ 모니터가 백그라운드에서 실행되었습니다!
+📊 프로세스 ID: 23693
+📝 로그 파일: rootdata_background.log
+
+🔍 상태 확인: ./check_rootdata_status.sh
+🛑 중지: ./stop_rootdata_daemon.sh
+🔄 재시작: ./restart_rootdata_daemon.sh
+
+💡 이제 노트북을 끄거나 커서를 끄도 모니터가 계속 실행됩니다!
