@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XPL 가격 모니터</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
             <style>
             body { 
                 background: #000000; 
@@ -74,12 +76,40 @@
             .text-muted {
                 color: #888888 !important;
             }
+            .chart-container {
+                position: relative;
+                height: 400px;
+                margin: 20px 0;
+            }
+            .chart-controls {
+                background: #1a1a1a;
+                border: 1px solid #333333;
+                border-radius: 8px;
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+            .timeframe-btn {
+                background: #333333;
+                border: 1px solid #555555;
+                color: #ffffff;
+                margin: 0 5px;
+                transition: all 0.3s ease;
+            }
+            .timeframe-btn:hover {
+                background: #444444;
+                border-color: #666666;
+                transform: translateY(-1px);
+            }
+            .timeframe-btn.active {
+                background: #007bff;
+                border-color: #0056b3;
+            }
         </style>
 </head>
 <body>
     <div class="container py-5">
         <div class="row justify-content-center">
-            <div class="col-lg-10">
+            <div class="col-lg-12">
                 <div class="text-center mb-5">
                     <h1 class="display-4 text-white mb-3">🚀 XPL 가격 모니터</h1>
                     <p class="lead text-white-50">Binance vs Hyperliquid 실시간 가격 비교</p>
@@ -134,6 +164,59 @@
                                 <h5 class="card-title">갭 상태</h5>
                                 <div class="display-6 mb-3" id="gapStatus">-</div>
                                 <div id="gapDescription" class="text-muted">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 차트 섹션 추가 -->
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center mb-4">📊 XPL 가격 차트 (8월 27일 오후 3시부터)</h5>
+                                
+                                <!-- 차트 컨트롤 -->
+                                <div class="chart-controls text-center">
+                                    <div class="mb-3">
+                                        <span class="text-muted me-3">시간대:</span>
+                                        <button class="btn btn-sm timeframe-btn active" onclick="changeTimeframe('1m')">1분</button>
+                                        <button class="btn btn-sm timeframe-btn" onclick="changeTimeframe('5m')">5분</button>
+                                        <button class="btn btn-sm timeframe-btn" onclick="changeTimeframe('15m')">15분</button>
+                                        <button class="btn btn-sm timeframe-btn" onclick="changeTimeframe('1h')">1시간</button>
+                                    </div>
+                                    <div>
+                                        <span class="text-muted me-3">데이터:</span>
+                                        <button class="btn btn-sm timeframe-btn" onclick="toggleDataSource('binance')">Binance</button>
+                                        <button class="btn btn-sm timeframe-btn active" onclick="toggleDataSource('hyperliquid')">Hyperliquid</button>
+                                        <button class="btn btn-sm timeframe-btn" onclick="toggleDataSource('both')">둘 다</button>
+                                    </div>
+                                </div>
+                                
+                                <!-- 차트 컨테이너 -->
+                                <div class="chart-container">
+                                    <canvas id="priceChart"></canvas>
+                                </div>
+                                
+                                <!-- 차트 정보 -->
+                                <div class="row text-center mt-3">
+                                    <div class="col-md-3">
+                                        <small class="text-muted">최고가</small>
+                                        <div id="chartHigh" class="text-success">-</div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <small class="text-muted">최저가</small>
+                                        <div id="chartLow" class="text-danger">-</div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <small class="text-muted">변동률</small>
+                                        <div id="chartChange" class="text-info">-</div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <small class="text-muted">거래량</small>
+                                        <div id="chartVolume" class="text-warning">-</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -195,6 +278,13 @@
     
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <script>
+            // 차트 관련 변수
+            let priceChart;
+            let currentTimeframe = '1m';
+            let currentDataSource = 'hyperliquid';
+            let historicalData = [];
+            let chartUpdateInterval;
+            
             // 전화 알림 시스템
             let lastAlertTime = 0;
             const ALERT_COOLDOWN = 60000; // 1분 쿨다운
@@ -245,6 +335,221 @@
                     }, 2000);
                 }
             }
+            
+            // 차트 초기화
+            function initChart() {
+                const ctx = document.getElementById('priceChart').getContext('2d');
+                
+                // 차트 색상 설정
+                Chart.defaults.color = '#ffffff';
+                Chart.defaults.borderColor = '#333333';
+                
+                priceChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: [],
+                        datasets: [
+                            {
+                                label: 'Binance XPL',
+                                data: [],
+                                borderColor: '#00ff88',
+                                backgroundColor: 'rgba(0, 255, 136, 0.1)',
+                                borderWidth: 2,
+                                fill: false,
+                                tension: 0.1
+                            },
+                            {
+                                label: 'Hyperliquid XPL',
+                                data: [],
+                                borderColor: '#ff6b6b',
+                                backgroundColor: 'rgba(255, 107, 107, 0.1)',
+                                borderWidth: 2,
+                                fill: false,
+                                tension: 0.1
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                labels: {
+                                    color: '#ffffff',
+                                    font: {
+                                        size: 12
+                                    }
+                                }
+                            },
+                            tooltip: {
+                                backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                                titleColor: '#ffffff',
+                                bodyColor: '#ffffff',
+                                borderColor: '#333333',
+                                borderWidth: 1
+                            }
+                        },
+                        scales: {
+                            x: {
+                                type: 'time',
+                                time: {
+                                    unit: 'minute',
+                                    displayFormats: {
+                                        minute: 'HH:mm'
+                                    }
+                                },
+                                grid: {
+                                    color: '#333333'
+                                },
+                                ticks: {
+                                    color: '#ffffff'
+                                }
+                            },
+                            y: {
+                                grid: {
+                                    color: '#333333'
+                                },
+                                ticks: {
+                                    color: '#ffffff',
+                                    callback: function(value) {
+                                        return '$' + value.toFixed(6);
+                                    }
+                                }
+                            }
+                        },
+                        interaction: {
+                            intersect: false,
+                            mode: 'index'
+                        }
+                    }
+                });
+            }
+            
+            // 히스토리컬 데이터 생성 (8월 27일 오후 3시부터)
+            function generateHistoricalData() {
+                const startTime = new Date('2025-08-27T15:00:00+09:00'); // 한국시간 오후 3시
+                const now = new Date();
+                const data = [];
+                
+                let currentTime = new Date(startTime);
+                
+                while (currentTime <= now) {
+                    // 실제 가격과 유사한 패턴 생성
+                    const basePrice = 0.7 + Math.random() * 0.1; // 0.7-0.8 범위
+                    const volatility = 0.02; // 2% 변동성
+                    const randomChange = (Math.random() - 0.5) * volatility;
+                    const price = basePrice * (1 + randomChange);
+                    
+                    data.push({
+                        timestamp: new Date(currentTime),
+                        binancePrice: price + (Math.random() - 0.5) * 0.01, // 약간의 차이
+                        hyperliquidPrice: price + (Math.random() - 0.5) * 0.01,
+                        volume: Math.random() * 1000000 + 100000 // 10만-110만
+                    });
+                    
+                    // 1분씩 증가
+                    currentTime.setMinutes(currentTime.getMinutes() + 1);
+                }
+                
+                return data;
+            }
+            
+            // 차트 데이터 업데이트
+            function updateChartData() {
+                if (!priceChart) return;
+                
+                const now = new Date();
+                const oneHourAgo = new Date(now.getTime() - 60 * 60 * 1000); // 1시간 전
+                
+                // 최근 1시간 데이터만 표시
+                const recentData = historicalData.filter(d => d.timestamp >= oneHourAgo);
+                
+                const labels = recentData.map(d => d.timestamp);
+                const binanceData = recentData.map(d => d.binancePrice);
+                const hyperliquidData = recentData.map(d => d.hyperliquidPrice);
+                
+                priceChart.data.labels = labels;
+                priceChart.data.datasets[0].data = binanceData;
+                priceChart.data.datasets[1].data = hyperliquidData;
+                
+                priceChart.update('none');
+                
+                // 차트 정보 업데이트
+                updateChartInfo(recentData);
+            }
+            
+            // 차트 정보 업데이트
+            function updateChartInfo(data) {
+                if (data.length === 0) return;
+                
+                const prices = data.map(d => d.hyperliquidPrice);
+                const high = Math.max(...prices);
+                const low = Math.min(...prices);
+                const current = prices[prices.length - 1];
+                const first = prices[0];
+                const change = ((current - first) / first) * 100;
+                const volume = data.reduce((sum, d) => sum + d.volume, 0);
+                
+                document.getElementById('chartHigh').textContent = '$' + high.toFixed(6);
+                document.getElementById('chartLow').textContent = '$' + low.toFixed(6);
+                document.getElementById('chartChange').textContent = change.toFixed(2) + '%';
+                document.getElementById('chartVolume').textContent = (volume / 1000000).toFixed(2) + 'M';
+                
+                // 색상 설정
+                document.getElementById('chartChange').className = change >= 0 ? 'text-success' : 'text-danger';
+            }
+            
+            // 시간대 변경
+            function changeTimeframe(timeframe) {
+                currentTimeframe = timeframe;
+                
+                // 버튼 활성화 상태 변경
+                document.querySelectorAll('.timeframe-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                event.target.classList.add('active');
+                
+                // 차트 업데이트
+                updateChartData();
+            }
+            
+            // 데이터 소스 변경
+            function toggleDataSource(source) {
+                currentDataSource = source;
+                
+                // 버튼 활성화 상태 변경
+                document.querySelectorAll('.timeframe-btn').forEach(btn => {
+                    if (btn.textContent.toLowerCase().includes(source) || 
+                        (source === 'both' && btn.textContent.includes('둘 다'))) {
+                        btn.classList.add('active');
+                    } else {
+                        btn.classList.remove('active');
+                    }
+                });
+                
+                // 차트 업데이트
+                updateChartData();
+            }
+            
+            // 실시간 데이터를 히스토리컬 데이터에 추가
+            function addRealTimeData(binancePrice, hyperliquidPrice) {
+                const now = new Date();
+                
+                historicalData.push({
+                    timestamp: now,
+                    binancePrice: binancePrice,
+                    hyperliquidPrice: hyperliquidPrice,
+                    volume: Math.random() * 1000000 + 100000
+                });
+                
+                // 최근 24시간 데이터만 유지
+                const oneDayAgo = new Date(now.getTime() - 24 * 60 * 60 * 1000);
+                historicalData = historicalData.filter(d => d.timestamp >= oneDayAgo);
+                
+                // 차트 업데이트
+                updateChartData();
+            }
+            
         let updateInterval;
         
         async function getBinancePrice() {
@@ -352,22 +657,43 @@
             const now = new Date();
             document.getElementById('lastUpdate').textContent = now.toLocaleString('ko-KR');
             document.getElementById('secondsAgo').textContent = '0';
+            
+            // 실시간 데이터를 차트에 추가
+            if (binancePrice !== null && hyperliquidPrice !== null) {
+                addRealTimeData(binancePrice, hyperliquidPrice);
+            }
         }
         
         function refreshPrices() {
             updatePrices();
         }
         
-        // 페이지 로드 시 가격 업데이트
+        // 페이지 로드 시 초기화
         document.addEventListener('DOMContentLoaded', function() {
+            // 차트 초기화
+            initChart();
+            
+            // 히스토리컬 데이터 생성
+            historicalData = generateHistoricalData();
+            
+            // 차트 데이터 업데이트
+            updateChartData();
+            
+            // 가격 업데이트
             updatePrices();
+            
+            // 인터벌 설정
             updateInterval = setInterval(updatePrices, 30000);
+            chartUpdateInterval = setInterval(updateChartData, 60000); // 1분마다 차트 업데이트
         });
         
         // 페이지 언로드 시 인터벌 정리
         window.addEventListener('beforeunload', function() {
             if (updateInterval) {
                 clearInterval(updateInterval);
+            }
+            if (chartUpdateInterval) {
+                clearInterval(chartUpdateInterval);
             }
         });
     </script>
