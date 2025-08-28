@@ -387,6 +387,11 @@ Hyperliquid 가격: $${hyperliquidPrice.toFixed(6)}
                     showAlert(`가격 갭이 ${gap.percentage.toFixed(2)}%로 45% 이상입니다!`, true);
                 }
                 
+                // 갭 40% 이상일 때 텔레그램 알림 전송
+                if (gap.percentage >= 40.0) {
+                    sendGapAlert(binancePrice, hyperliquidPrice, gap.percentage);
+                }
+                
                 const statusElement = document.getElementById('gapStatus');
                 const descriptionElement = document.getElementById('gapDescription');
                 
