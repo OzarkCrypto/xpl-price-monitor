@@ -154,9 +154,9 @@
                             🤖 봇 정보
                         </button>
                         
-                        <!-- 새 그룹 테스트 버튼 -->
+                        <!-- 두 채팅 테스트 버튼 -->
                         <button class="btn btn-warning btn-lg ms-3" onclick="testNewGroup()">
-                            🆕 새 그룹 테스트
+                            🆕 두 채팅 테스트
                         </button>
                         
                         <!-- 현재 가격 테스트 버튼 -->
@@ -210,12 +210,12 @@
     
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <script>
-            // 새 그룹 채팅 ID
-            const NEW_GROUP_CHAT_ID = '8468086404';
+            // 텔레그램 채팅 ID들
+            const CHAT_ID_1 = '1339285013';
+            const CHAT_ID_2 = '-4987247224';
             
             // 텔레그램 봇 설정
             const TELEGRAM_TOKEN = '8468086404:AAFe5viY6CrlqCsOqP6XKjctKxCu6qI3u1E';
-            const TELEGRAM_CHAT_ID = '1339285013';
             let lastTelegramAlertTime = 0;
             const TELEGRAM_ALERT_COOLDOWN = 300000; // 5분 쿨다운
             
@@ -223,27 +223,44 @@
             let lastAlertTime = 0;
             const ALERT_COOLDOWN = 300000; // 5분 쿨다운
             
-            // 텔레그램 메시지 전송
+            // 텔레그램 메시지 전송 (두 채팅 모두에)
             async function sendTelegramMessage(message) {
                 try {
-                    const url = `https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`;
-                    const response = await fetch(url, {
+                    // 첫 번째 채팅에 전송
+                    const url1 = `https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`;
+                    const response1 = await fetch(url1, {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
                         },
                         body: JSON.stringify({
-                            chat_id: TELEGRAM_CHAT_ID,
+                            chat_id: CHAT_ID_1,
                             text: message,
                             parse_mode: 'HTML'
                         })
                     });
                     
-                    const result = await response.json();
-                    if (result.ok) {
-                        console.log('텔레그램 메시지 전송 성공:', result);
+                    // 두 번째 채팅에 전송
+                    const url2 = `https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`;
+                    const response2 = await fetch(url2, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            chat_id: CHAT_ID_2,
+                            text: message,
+                            parse_mode: 'HTML'
+                        })
+                    });
+                    
+                    const result1 = await response1.json();
+                    const result2 = await response2.json();
+                    
+                    if (result1.ok && result2.ok) {
+                        console.log('텔레그램 메시지 전송 성공 (두 채팅 모두):', result1, result2);
                     } else {
-                        console.error('텔레그램 메시지 전송 실패:', result);
+                        console.error('텔레그램 메시지 전송 실패:', result1, result2);
                     }
                 } catch (error) {
                     console.error('텔레그램 API 오류:', error);
@@ -267,13 +284,10 @@
  
  ⏰ ${new Date().toLocaleString('ko-KR')}`;
                 
-                // 기존 그룹에 전송
+                // 두 채팅 모두에 전송
                 sendTelegramMessage(message);
                 
-                // 새 그룹에도 전송
-                sendTelegramMessageToGroup(message, NEW_GROUP_CHAT_ID);
-                
-                console.log('텔레그램 갭 알림 전송 (두 그룹):', gapPercentage.toFixed(2) + '%');
+                console.log('텔레그램 갭 알림 전송 (두 채팅 모두):', gapPercentage.toFixed(2) + '%');
             }
             
             // 긴급 알림 체크 (텔레그램만)
@@ -282,41 +296,16 @@
                 if (hyperliquidPrice >= 1.5 || gapPercentage >= 33) {
                     const message = `🚨 <b>긴급 알림!</b>\n\nHyperliquid XPL: $${hyperliquidPrice.toFixed(6)}\nBinance XPL: $${binancePrice.toFixed(6)}\n갭: ${gapPercentage.toFixed(2)}%\n\n⏰ ${new Date().toLocaleString('ko-KR')}`;
                     
-                    // 기존 그룹에 전송
+                    // 두 채팅 모두에 전송
                     sendTelegramMessage(message);
                     
-                    // 새 그룹에도 전송
-                    sendTelegramMessageToGroup(message, NEW_GROUP_CHAT_ID);
-                    
-                    console.log('긴급 텔레그램 알림 전송 (두 그룹):', message);
+                    console.log('긴급 텔레그램 알림 전송 (두 채팅 모두):', message);
                 }
             }
             
-            // 특정 그룹에 텔레그램 메시지 전송
+            // 특정 그룹에 텔레그램 메시지 전송 (사용하지 않음 - sendTelegramMessage로 통합)
             async function sendTelegramMessageToGroup(message, chatId) {
-                try {
-                    const url = `https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`;
-                    const response = await fetch(url, {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify({
-                            chat_id: chatId,
-                            text: message,
-                            parse_mode: 'HTML'
-                        })
-                    });
-                    
-                    const result = await response.json();
-                    if (result.ok) {
-                        console.log(`그룹 ${chatId}에 메시지 전송 성공`);
-                    } else {
-                        console.error(`그룹 ${chatId}에 메시지 전송 실패:`, result);
-                    }
-                } catch (error) {
-                    console.error(`그룹 ${chatId} 메시지 전송 오류:`, error);
-                }
+                console.log('sendTelegramMessageToGroup 함수는 더 이상 사용되지 않습니다. sendTelegramMessage를 사용하세요.');
             }
             
             // 봇 정보 확인
@@ -337,38 +326,17 @@
                 }
             }
             
-            // 새 그룹에 테스트 메시지 전송
+            // 두 채팅 모두에 테스트 메시지 전송
             async function testNewGroup() {
-                if (!NEW_GROUP_CHAT_ID) {
-                    console.log('새 그룹 Chat ID를 먼저 설정해주세요!');
-                    return;
-                }
-                
                 try {
-                    const message = `🧪 <b>새 그룹 테스트</b>\n\n✅ 이 그룹에도 알림이 정상적으로 전송됩니다!\n\n⏰ ${new Date().toLocaleString('ko-KR')}`;
+                    const message = `🧪 <b>두 채팅 테스트</b>\n\n✅ 두 채팅 모두에 알림이 정상적으로 전송됩니다!\n\n⏰ ${new Date().toLocaleString('ko-KR')}`;
                     
-                    const url = `https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`;
-                    const response = await fetch(url, {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify({
-                            chat_id: NEW_GROUP_CHAT_ID,
-                            text: message,
-                            parse_mode: 'HTML'
-                        })
-                    });
+                    // 두 채팅 모두에 전송
+                    sendTelegramMessage(message);
                     
-                    const result = await response.json();
-                    if (result.ok) {
-                        console.log('새 그룹에 테스트 메시지가 전송되었습니다!');
-                        console.log('새 그룹 테스트 메시지 전송 성공:', result);
-                    } else {
-                        console.error('새 그룹 테스트 메시지 전송 실패:', result);
-                    }
+                    console.log('두 채팅 모두에 테스트 메시지가 전송되었습니다!');
                 } catch (error) {
-                    console.error('새 그룹 테스트 오류:', error);
+                    console.error('테스트 메시지 전송 오류:', error);
                 }
             }
             
@@ -516,9 +484,8 @@
                 // 테스트 메시지 생성
                 const testMessage = `🧪 <b>현재 가격 테스트</b>\n\nBinance XPL: $${binancePrice.toFixed(6)}\nHyperliquid XPL: $${hyperliquidPrice.toFixed(6)}\n갭: ${gapPercentage.toFixed(2)}%\n\n⏰ ${new Date().toLocaleString('ko-KR')}`;
                 
-                // 두 그룹 모두에 전송
+                // 두 채팅 모두에 전송
                 sendTelegramMessage(testMessage);
-                sendTelegramMessageToGroup(testMessage, NEW_GROUP_CHAT_ID);
                 
                 console.log(`테스트 메시지 전송 완료!\n\nBinance: $${binancePrice.toFixed(6)}\nHyperliquid: $${hyperliquidPrice.toFixed(6)}\n갭: ${gapPercentage.toFixed(2)}%`);
                 
