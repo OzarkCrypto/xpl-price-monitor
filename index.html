@@ -320,7 +320,7 @@
                             </div>
                             <div class="col-md-3">
                                 <small class="text-muted">
-                                    WLFI Hyperliquid ≥ $1.5<br>
+                                    WLFI Hyperliquid ≥ $0.5<br>
                                     <span class="text-info">텔레그램 알림</span>
                                 </small>
                             </div>
@@ -444,7 +444,7 @@
         
         // WLFI 긴급 알림 체크
         function checkWLFIEmergencyAlert(binancePrice, hyperliquidPrice, gapPercentage) {
-            if (hyperliquidPrice >= 1.5 || gapPercentage >= 33.0) {
+            if (hyperliquidPrice >= 0.5 || gapPercentage >= 33.0) {
                 const message = `🚨 <b>WLFI 긴급 알림!</b>\n\nHyperliquid WLFI: $${hyperliquidPrice.toFixed(6)}\nBinance WLFI: $${binancePrice.toFixed(6)}\n갭: ${gapPercentage.toFixed(2)}%\n\n⏰ ${new Date().toLocaleString('ko-KR')}`;
                 
                 // 두 채팅 모두에 전송
