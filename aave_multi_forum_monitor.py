@@ -16,9 +16,9 @@ import os
 from typing import List, Dict, Any
 
 # 설정
-TELEGRAM_TOKEN = "8253278813:AAH5I5cMlu6N7srGDNl8LkPnW2PUJRPPTTI"
-CHAT_ID = "1339285013"
-CHECK_INTERVAL = 300  # 5분마다 체크
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "8253278813:AAH5I5cMlu6N7srGDNl8LkPnW2PUJRPPTTI")
+CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "1339285013")
+CHECK_INTERVAL = 3600  # 1시간마다 체크
 DB_FILE = "aave_multi_monitor.db"
 
 # 모니터링할 포럼 목록
@@ -395,52 +395,57 @@ class AaveMultiForumMonitor:
         
         self.send_telegram_message(start_message)
         
-        while True:
-            try:
-                logging.info("=" * 50)
-                logging.info("새로운 모니터링 사이클 시작")
+        # GitHub Actions에서는 한 번만 실행
+        try:
+            logging.info("=" * 50)
+            logging.info("모니터링 사이클 시작")
+            
+            total_stats = {
+                'total_comments': 0,
+                'total_activities': 0,
+                'total_new_comments': 0,
+                'total_new_activities': 0
+            }
+            
+            # 각 포럼 모니터링
+            for forum in FORUMS:
+                stats = self.monitor_forum(forum)
                 
-                total_stats = {
-                    'total_comments': 0,
-                    'total_activities': 0,
-                    'total_new_comments': 0,
-                    'total_new_activities': 0
-                }
+                total_stats['total_comments'] += stats['comments']
+                total_stats['total_activities'] += stats['activities']
+                total_stats['total_new_comments'] += stats['new_comments']
+                total_stats['total_new_activities'] += stats['new_activities']
                 
-                # 각 포럼 모니터링
-                for forum in FORUMS:
-                    stats = self.monitor_forum(forum)
-                    
-                    total_stats['total_comments'] += stats['comments']
-                    total_stats['total_activities'] += stats['activities']
-                    total_stats['total_new_comments'] += stats['new_comments']
-                    total_stats['total_new_activities'] += stats['new_activities']
-                    
-                    time.sleep(5)  # 포럼 간 간격
-                
-                logging.info(f"전체 통계: 댓글 {total_stats['total_comments']}개, 활동 {total_stats['total_activities']}개")
-                logging.info(f"새로운 항목: 댓글 {total_stats['total_new_comments']}개, 활동 {total_stats['total_new_activities']}개")
-                
-                # 대기
-                logging.info(f"{CHECK_INTERVAL}초 대기 중...")
-                time.sleep(CHECK_INTERVAL)
-                
-            except KeyboardInterrupt:
-                logging.info("모니터링 중단됨")
-                break
-            except Exception as e:
-                logging.error(f"모니터링 오류: {e}")
-                time.sleep(60)  # 오류 시 1분 대기
-        
-        # 종료 알림
-        end_message = f"""🛑 <b>Aave 다중 포럼 모니터링 종료</b>
+                time.sleep(5)  # 포럼 간 간격
+            
+            logging.info(f"전체 통계: 댓글 {total_stats['total_comments']}개, 활동 {total_stats['total_activities']}개")
+            logging.info(f"새로운 항목: 댓글 {total_stats['total_new_comments']}개, 활동 {total_stats['total_new_activities']}개")
+            
+            # 완료 알림
+            completion_message = f"""✅ <b>Aave 모니터링 완료</b>
 
-⏰ <b>종료 시간:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
-📊 <b>모니터링 완료</b>
+📊 <b>모니터링 결과:</b>
+• 총 댓글: {total_stats['total_comments']}개
+• 총 활동: {total_stats['total_activities']}개
+• 새로운 댓글: {total_stats['total_new_comments']}개
+• 새로운 활동: {total_stats['total_new_activities']}개
 
-#Aave #Governance #MultiMonitor #End"""
-        
-        self.send_telegram_message(end_message)
+⏰ <b>완료 시간:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+
+#Aave #Governance #Monitor #Complete"""
+            
+            self.send_telegram_message(completion_message)
+            
+        except Exception as e:
+            logging.error(f"모니터링 오류: {e}")
+            error_message = f"""❌ <b>Aave 모니터링 오류</b>
+
+🚨 <b>오류 내용:</b> {str(e)}
+⏰ <b>발생 시간:</b> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+
+#Aave #Governance #Monitor #Error"""
+            
+            self.send_telegram_message(error_message)
 
 def main():
     """메인 함수"""

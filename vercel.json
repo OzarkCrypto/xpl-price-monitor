@@ -1,4 +1,5 @@
 {
+  "name": "gap-monitor",
   "version": 2,
   "builds": [
     {

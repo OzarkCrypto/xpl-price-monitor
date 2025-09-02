@@ -16,3 +16,13 @@ echo "🤖 VC 모니터링 봇 실행 중..."
 python3 vc_monitor_enhanced.py
 
 echo "✅ 봇 실행 완료"
+
+
+
+
+
+
+
+
+
+
