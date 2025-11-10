@@ -49,6 +49,12 @@ class HyperliquidBinanceGapMonitor:
         self.price_data: Dict[str, Dict[str, PriceData]] = {}  # {symbol: {exchange: PriceData}}
         self.gap_history: List[GapData] = []
         
+        # API Rate Limiting
+        self.binance_last_call_time = 0.0
+        self.binance_min_interval = 1.0  # 1초에 한번만 호출
+        self.binance_cache: Dict[str, Tuple[PriceData, float]] = {}  # {symbol: (data, timestamp)}
+        self.binance_cache_ttl = 2.0  # 캐시 유효 시간 (초)
+        
     async def fetch_hyperliquid_price(self, symbol: str) -> Optional[PriceData]:
         """Hyperliquid에서 가격 데이터 가져오기"""
         try:
@@ -117,17 +123,35 @@ class HyperliquidBinanceGapMonitor:
         return None
     
     async def fetch_binance_price(self, symbol: str) -> Optional[PriceData]:
-        """Binance에서 가격 데이터 가져오기"""
+        """Binance에서 가격 데이터 가져오기 (Rate Limited: 1초에 한번)"""
+        current_time = time.time()
+        
+        # 캐시 확인
+        if symbol in self.binance_cache:
+            cached_data, cache_time = self.binance_cache[symbol]
+            if current_time - cache_time < self.binance_cache_ttl:
+                logger.debug(f"Binance 캐시 사용: {symbol}")
+                return cached_data
+        
+        # Rate Limiting: 마지막 호출로부터 1초 이상 경과했는지 확인
+        time_since_last_call = current_time - self.binance_last_call_time
+        if time_since_last_call < self.binance_min_interval:
+            wait_time = self.binance_min_interval - time_since_last_call
+            logger.debug(f"Binance Rate Limit 대기: {wait_time:.2f}초")
+            await asyncio.sleep(wait_time)
+        
         try:
             # Binance 선물 API
             url = f"{self.binance_base_url}/fapi/v1/ticker/24hr"
             params = {"symbol": symbol}
             
             async with aiohttp.ClientSession() as session:
-                async with session.get(url, params=params) as response:
+                async with session.get(url, params=params, timeout=aiohttp.ClientTimeout(total=10)) as response:
+                    self.binance_last_call_time = time.time()
+                    
                     if response.status == 200:
                         data = await response.json()
-                        return PriceData(
+                        price_data = PriceData(
                             exchange="binance",
                             symbol=symbol,
                             price=float(data.get('lastPrice', 0)),
@@ -135,10 +159,39 @@ class HyperliquidBinanceGapMonitor:
                             volume_24h=float(data.get('quoteVolume', 0)),
                             change_24h=float(data.get('priceChangePercent', 0))
                         )
+                        # 캐시에 저장
+                        self.binance_cache[symbol] = (price_data, time.time())
+                        return price_data
+                    elif response.status == 429:
+                        # Too Many Requests
+                        logger.warning(f"Binance API Rate Limit 초과 (429). 대기 후 재시도...")
+                        retry_after = int(response.headers.get('Retry-After', 5))
+                        await asyncio.sleep(retry_after)
+                        # 캐시된 데이터가 있으면 반환
+                        if symbol in self.binance_cache:
+                            return self.binance_cache[symbol][0]
+                        return None
+                    else:
+                        logger.error(f"Binance API 오류: HTTP {response.status}")
+                        # 캐시된 데이터가 있으면 반환
+                        if symbol in self.binance_cache:
+                            logger.info(f"Binance 캐시된 데이터 사용: {symbol}")
+                            return self.binance_cache[symbol][0]
+                        return None
+        except asyncio.TimeoutError:
+            logger.error(f"Binance API 타임아웃 ({symbol})")
+            # 캐시된 데이터가 있으면 반환
+            if symbol in self.binance_cache:
+                logger.info(f"Binance 캐시된 데이터 사용 (타임아웃): {symbol}")
+                return self.binance_cache[symbol][0]
+            return None
         except Exception as e:
             logger.error(f"Binance 가격 데이터 수집 실패 ({symbol}): {e}")
-        
-        return None
+            # 캐시된 데이터가 있으면 반환
+            if symbol in self.binance_cache:
+                logger.info(f"Binance 캐시된 데이터 사용 (오류): {symbol}")
+                return self.binance_cache[symbol][0]
+            return None
     
     async def fetch_prices(self, symbol: str) -> Dict[str, Optional[PriceData]]:
         """두 거래소에서 가격 데이터 수집"""
@@ -273,10 +326,10 @@ def background_monitor(symbol: str = "MONUSDT"):
             gap_data = loop.run_until_complete(monitor.monitor_symbol(symbol))
             if gap_data:
                 latest_gap_data[symbol] = gap_data
-            time.sleep(5)  # 5초마다 업데이트
+            time.sleep(3)  # 3초마다 업데이트 (Binance는 1초 제한이므로 충분)
         except Exception as e:
             logger.error(f"모니터링 오류: {e}")
-            time.sleep(10)  # 오류 시 10초 대기
+            time.sleep(5)  # 오류 시 5초 대기
 
 @app.route('/')
 def index():
