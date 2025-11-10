@@ -1,57 +1,20 @@
-# Python
+# 기존 내용 유지
+*.pyc
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# Virtual environments
-venv/
-env/
-ENV/
-venv_xpl/
-
-# Database files
 *.db
-*.sqlite
-*.sqlite3
-
-# Log files
 *.log
-
-# Environment variables
+*.pid
 .env
-.env.local
-.env.production
+venv/
+.venv/
 
-# IDE
-.vscode/
-.idea/
+# Gap Monitor 관련
+gap_monitor.pid
+gap_monitor_daemon.log
+ngrok
+ngrok.pid
+
+# 기타
+.DS_Store
 *.swp
 *.swo
-*~
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Temporary files
-*.tmp
-*.temp
-

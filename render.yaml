@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: gap-monitor
+    env: python
+    buildCommand: pip install -r requirements_gap_monitor.txt
+    startCommand: python3 hyperliquid_binance_gap_server.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.0
+      - key: PORT
+        value: 5001
+

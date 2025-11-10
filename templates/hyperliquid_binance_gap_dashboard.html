@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperliquid vs Binance 가격 갭 대시보드</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #4a5568;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 10px;
+        }
+
+        .price-comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .exchange-card {
+            background: #f7fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .exchange-card.hyperliquid {
+            border-color: #667eea;
+            background: #edf2f7;
+        }
+
+        .exchange-card.binance {
+            border-color: #f0b90b;
+            background: #fffbf0;
+        }
+
+        .exchange-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2d3748;
+        }
+
+        .price-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .price-value.binance {
+            color: #f0b90b;
+        }
+
+        .price-label {
+            font-size: 0.9rem;
+            color: #718096;
+        }
+
+        .gap-display {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .gap-value {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .gap-value.positive {
+            color: #48bb78;
+        }
+
+        .gap-value.negative {
+            color: #f56565;
+        }
+
+        .gap-percentage {
+            font-size: 1.5rem;
+            opacity: 0.9;
+        }
+
+        .opportunity-badge {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .opportunity-badge.buy-hyperliquid {
+            background: #48bb78;
+            color: white;
+        }
+
+        .opportunity-badge.buy-binance {
+            background: #f56565;
+            color: white;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            color: #718096;
+            font-size: 0.9rem;
+        }
+
+        .controls {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5a67d8;
+        }
+
+        .btn-success {
+            background: #48bb78;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #38a169;
+        }
+
+        .symbol-input {
+            padding: 10px 15px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1rem;
+            width: 200px;
+        }
+
+        .chart-container {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #718096;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .alert {
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .alert-info {
+            background: #e6f3ff;
+            border: 1px solid #b3d9ff;
+            color: #0066cc;
+        }
+
+        .status-indicator {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+
+        .status-indicator.active {
+            background: #48bb78;
+        }
+
+        .status-indicator.inactive {
+            background: #f56565;
+        }
+
+        @media (max-width: 768px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .price-comparison {
+                grid-template-columns: 1fr;
+            }
+            
+            .controls {
+                flex-direction: column;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 Hyperliquid vs Binance 가격 갭 대시보드</h1>
+            <p>실시간 가격 차이 모니터링 및 차익거래 기회 탐지</p>
+        </div>
+
+        <div class="alert alert-info">
+            <strong>📊 실시간 모니터링:</strong> Hyperliquid와 Binance 간의 가격 차이를 실시간으로 추적하여 차익거래 기회를 탐지합니다.
+            <span class="status-indicator" id="statusIndicator"></span>
+            <span id="statusText">연결 중...</span>
+        </div>
+
+        <div class="controls">
+            <input type="text" class="symbol-input" id="symbolInput" placeholder="심볼 (예: MONUSDT)" value="MONUSDT">
+            <button class="btn btn-primary" onclick="startMonitoring()">🔄 모니터링 시작</button>
+            <button class="btn btn-success" onclick="refreshData()">🔄 데이터 새로고침</button>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value" id="currentGap">$0.00</div>
+                <div class="stat-label">현재 갭</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="currentGapPercent">0%</div>
+                <div class="stat-label">현재 갭 (%)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="avgGap">$0.00</div>
+                <div class="stat-label">평균 갭</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="maxGap">$0.00</div>
+                <div class="stat-label">최대 갭</div>
+            </div>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="card">
+                <h3>💰 가격 비교</h3>
+                <div class="price-comparison">
+                    <div class="exchange-card hyperliquid">
+                        <div class="exchange-name">Hyperliquid</div>
+                        <div class="price-value" id="hyperliquidPrice">$0.00</div>
+                        <div class="price-label">현재 가격</div>
+                    </div>
+                    <div class="exchange-card binance">
+                        <div class="exchange-name">Binance</div>
+                        <div class="price-value binance" id="binancePrice">$0.00</div>
+                        <div class="price-label">현재 가격</div>
+                    </div>
+                </div>
+                <div class="gap-display">
+                    <div class="gap-value" id="gapValue">$0.00</div>
+                    <div class="gap-percentage" id="gapPercentage">0.00%</div>
+                    <div class="opportunity-badge" id="opportunityBadge"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>📈 실시간 가격 차트</h3>
+                <div id="priceChart" style="height: 300px;">
+                    <div class="loading">
+                        <div class="spinner"></div>
+                        <p>가격 데이터를 로딩 중...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <h3>📊 갭 히스토리</h3>
+            <canvas id="gapChart" width="400" height="200"></canvas>
+        </div>
+    </div>
+
+    <script>
+        // 전역 변수
+        let monitoringInterval;
+        let priceChart;
+        let gapChart;
+        let currentSymbol = "MONUSDT";
+        let priceHistory = [];
+        let gapHistory = [];
+
+        // 초기화
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeCharts();
+            startMonitoring();
+        });
+
+        // 차트 초기화
+        function initializeCharts() {
+            // 가격 차트
+            const priceCtx = document.getElementById('priceChart');
+            if (priceCtx.getContext) {
+                priceChart = new Chart(priceCtx.getContext('2d'), {
+                    type: 'line',
+                    data: {
+                        labels: [],
+                        datasets: [
+                            {
+                                label: 'Hyperliquid',
+                                data: [],
+                                borderColor: 'rgba(102, 126, 234, 1)',
+                                backgroundColor: 'rgba(102, 126, 234, 0.1)',
+                                fill: true
+                            },
+                            {
+                                label: 'Binance',
+                                data: [],
+                                borderColor: 'rgba(240, 185, 11, 1)',
+                                backgroundColor: 'rgba(240, 185, 11, 0.1)',
+                                fill: true
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: {
+                                beginAtZero: false,
+                                title: {
+                                    display: true,
+                                    text: '가격 (USDT)'
+                                }
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                display: true,
+                                position: 'top'
+                            }
+                        }
+                    }
+                });
+            }
+
+            // 갭 차트
+            const gapCtx = document.getElementById('gapChart');
+            if (gapCtx.getContext) {
+                gapChart = new Chart(gapCtx.getContext('2d'), {
+                    type: 'line',
+                    data: {
+                        labels: [],
+                        datasets: [{
+                            label: '가격 갭 (%)',
+                            data: [],
+                            borderColor: 'rgba(102, 126, 234, 1)',
+                            backgroundColor: 'rgba(102, 126, 234, 0.1)',
+                            fill: true
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        scales: {
+                            y: {
+                                title: {
+                                    display: true,
+                                    text: '갭 (%)'
+                                }
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                display: true,
+                                position: 'top'
+                            }
+                        }
+                    }
+                });
+            }
+        }
+
+        // 모니터링 시작
+        function startMonitoring() {
+            const symbol = document.getElementById('symbolInput').value.toUpperCase();
+            if (!symbol) {
+                alert('심볼을 입력해주세요.');
+                return;
+            }
+
+            currentSymbol = symbol;
+
+            // 서버에 모니터링 시작 요청
+            axios.get(`/api/start/${symbol}`)
+                .then(response => {
+                    console.log('모니터링 시작:', response.data);
+                    updateStatus(true);
+                })
+                .catch(error => {
+                    console.error('모니터링 시작 실패:', error);
+                    updateStatus(false);
+                });
+
+            // 기존 인터벌 클리어
+            if (monitoringInterval) {
+                clearInterval(monitoringInterval);
+            }
+
+            // 주기적으로 데이터 업데이트
+            fetchData();
+            monitoringInterval = setInterval(fetchData, 5000); // 5초마다 업데이트
+        }
+
+        // 데이터 가져오기
+        function fetchData() {
+            axios.get(`/api/gap/${currentSymbol}`)
+                .then(response => {
+                    const data = response.data;
+                    updateDashboard(data);
+                    updateStatus(true);
+                })
+                .catch(error => {
+                    console.error('데이터 가져오기 실패:', error);
+                    updateStatus(false);
+                });
+
+            // 히스토리 가져오기
+            axios.get(`/api/gap/${currentSymbol}/history`)
+                .then(response => {
+                    gapHistory = response.data;
+                    updateGapChart();
+                })
+                .catch(error => {
+                    console.error('히스토리 가져오기 실패:', error);
+                });
+        }
+
+        // 대시보드 업데이트
+        function updateDashboard(data) {
+            if (!data.gap) return;
+
+            const gap = data.gap;
+            const stats = data.statistics;
+
+            // 가격 표시
+            document.getElementById('hyperliquidPrice').textContent = 
+                `$${parseFloat(gap.hyperliquid_price).toFixed(4)}`;
+            document.getElementById('binancePrice').textContent = 
+                `$${parseFloat(gap.binance_price).toFixed(4)}`;
+
+            // 갭 표시
+            const gapValue = parseFloat(gap.gap);
+            const gapPercent = parseFloat(gap.gap_percentage);
+            
+            document.getElementById('gapValue').textContent = 
+                `$${gapValue.toFixed(4)}`;
+            document.getElementById('gapPercentage').textContent = 
+                `${gapPercent > 0 ? '+' : ''}${gapPercent.toFixed(2)}%`;
+
+            // 갭 값 색상 설정
+            const gapValueEl = document.getElementById('gapValue');
+            gapValueEl.className = 'gap-value ' + (gapValue > 0 ? 'positive' : 'negative');
+
+            // 차익거래 기회 배지
+            const badge = document.getElementById('opportunityBadge');
+            if (gap.opportunity === 'buy_on_hyperliquid') {
+                badge.textContent = '💰 Hyperliquid에서 구매 추천';
+                badge.className = 'opportunity-badge buy-hyperliquid';
+            } else {
+                badge.textContent = '💰 Binance에서 구매 추천';
+                badge.className = 'opportunity-badge buy-binance';
+            }
+
+            // 통계 업데이트
+            document.getElementById('currentGap').textContent = 
+                `$${gapValue.toFixed(4)}`;
+            document.getElementById('currentGapPercent').textContent = 
+                `${gapPercent > 0 ? '+' : ''}${gapPercent.toFixed(2)}%`;
+            document.getElementById('avgGap').textContent = 
+                `$${parseFloat(stats.avg_gap || 0).toFixed(4)}`;
+            document.getElementById('maxGap').textContent = 
+                `$${parseFloat(stats.max_gap || 0).toFixed(4)}`;
+
+            // 가격 차트 업데이트
+            updatePriceChart(gap);
+        }
+
+        // 가격 차트 업데이트
+        function updatePriceChart(gap) {
+            if (!priceChart) return;
+
+            const now = new Date().toLocaleTimeString();
+            
+            // 최근 20개 데이터만 유지
+            if (priceChart.data.labels.length >= 20) {
+                priceChart.data.labels.shift();
+                priceChart.data.datasets[0].data.shift();
+                priceChart.data.datasets[1].data.shift();
+            }
+
+            priceChart.data.labels.push(now);
+            priceChart.data.datasets[0].data.push(parseFloat(gap.hyperliquid_price));
+            priceChart.data.datasets[1].data.push(parseFloat(gap.binance_price));
+            priceChart.update('none');
+        }
+
+        // 갭 차트 업데이트
+        function updateGapChart() {
+            if (!gapChart || gapHistory.length === 0) return;
+
+            const labels = gapHistory.map((g, i) => {
+                const date = new Date(g.timestamp * 1000);
+                return date.toLocaleTimeString();
+            });
+            const gaps = gapHistory.map(g => parseFloat(g.gap_percentage));
+
+            gapChart.data.labels = labels;
+            gapChart.data.datasets[0].data = gaps;
+            gapChart.update('none');
+        }
+
+        // 상태 업데이트
+        function updateStatus(isActive) {
+            const indicator = document.getElementById('statusIndicator');
+            const statusText = document.getElementById('statusText');
+            
+            if (isActive) {
+                indicator.className = 'status-indicator active';
+                statusText.textContent = '연결됨';
+            } else {
+                indicator.className = 'status-indicator inactive';
+                statusText.textContent = '연결 끊김';
+            }
+        }
+
+        // 데이터 새로고침
+        function refreshData() {
+            fetchData();
+            console.log('데이터가 새로고침되었습니다.');
+        }
+
+        // Enter 키로 모니터링 시작
+        document.getElementById('symbolInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                startMonitoring();
+            }
+        });
+    </script>
+</body>
+</html>
+
