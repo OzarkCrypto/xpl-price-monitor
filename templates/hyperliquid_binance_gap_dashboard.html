@@ -382,7 +382,7 @@
         </div>
 
         <div class="chart-container">
-            <h3>📊 갭 히스토리</h3>
+            <h3>📊 갭 히스토리 (최근 24시간)</h3>
             <canvas id="gapChart" width="400" height="200"></canvas>
         </div>
     </div>
@@ -610,15 +610,32 @@
             priceChart.update('none');
         }
 
-        // 갭 차트 업데이트
+        // 갭 차트 업데이트 (최근 24시간 데이터만)
         function updateGapChart() {
             if (!gapChart || gapHistory.length === 0) return;
 
-            const labels = gapHistory.map((g, i) => {
+            // 최근 24시간 데이터만 필터링
+            const now = Date.now();
+            const twentyFourHoursAgo = now - (24 * 60 * 60 * 1000);
+            const recentGaps = gapHistory.filter(g => g.timestamp * 1000 >= twentyFourHoursAgo);
+
+            if (recentGaps.length === 0) return;
+
+            // 시간순으로 정렬
+            recentGaps.sort((a, b) => a.timestamp - b.timestamp);
+
+            const labels = recentGaps.map(g => {
                 const date = new Date(g.timestamp * 1000);
-                return date.toLocaleTimeString();
+                // 날짜와 시간 표시 (같은 날이면 시간만, 다른 날이면 날짜+시간)
+                const today = new Date();
+                const isToday = date.toDateString() === today.toDateString();
+                if (isToday) {
+                    return date.toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' });
+                } else {
+                    return date.toLocaleString('ko-KR', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+                }
             });
-            const gaps = gapHistory.map(g => parseFloat(g.gap_percentage));
+            const gaps = recentGaps.map(g => parseFloat(g.gap_percentage));
 
             gapChart.data.labels = labels;
             gapChart.data.datasets[0].data = gaps;

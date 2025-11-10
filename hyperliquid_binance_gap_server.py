@@ -241,10 +241,16 @@ class HyperliquidBinanceGapMonitor:
             opportunity=opportunity
         )
         
-        # 히스토리 저장 (최근 100개만)
+        # 히스토리 저장 (최근 24시간 데이터만 유지)
         self.gap_history.append(gap_data)
-        if len(self.gap_history) > 100:
-            self.gap_history.pop(0)
+        
+        # 24시간 이전 데이터 삭제
+        current_time = time.time()
+        twenty_four_hours_ago = current_time - (24 * 60 * 60)  # 24시간 = 86400초
+        self.gap_history = [
+            g for g in self.gap_history 
+            if g.timestamp >= twenty_four_hours_ago
+        ]
         
         return gap_data
     
@@ -272,8 +278,15 @@ class HyperliquidBinanceGapMonitor:
         return gap_data
     
     def get_statistics(self, symbol: str) -> Dict:
-        """통계 정보 반환"""
-        symbol_gaps = [g for g in self.gap_history if g.symbol == symbol]
+        """통계 정보 반환 (최근 24시간 데이터)"""
+        current_time = time.time()
+        twenty_four_hours_ago = current_time - (24 * 60 * 60)  # 24시간 = 86400초
+        
+        # 최근 24시간 데이터만 필터링
+        symbol_gaps = [
+            g for g in self.gap_history 
+            if g.symbol == symbol and g.timestamp >= twenty_four_hours_ago
+        ]
         
         if not symbol_gaps:
             return {
@@ -282,6 +295,7 @@ class HyperliquidBinanceGapMonitor:
                 'avg_gap': 0,
                 'max_gap': 0,
                 'min_gap': 0,
+                'avg_gap_percentage': 0,
                 'total_samples': 0
             }
         
@@ -353,9 +367,20 @@ def get_gap(symbol: str):
 
 @app.route('/api/gap/<symbol>/history')
 def get_gap_history(symbol: str):
-    """가격 갭 히스토리 API"""
-    symbol_gaps = [g for g in monitor.gap_history if g.symbol == symbol]
-    return jsonify([asdict(g) for g in symbol_gaps[-50:]])  # 최근 50개만
+    """가격 갭 히스토리 API (최근 24시간 데이터)"""
+    current_time = time.time()
+    twenty_four_hours_ago = current_time - (24 * 60 * 60)  # 24시간 = 86400초
+    
+    # 해당 심볼의 최근 24시간 데이터만 필터링
+    symbol_gaps = [
+        g for g in monitor.gap_history 
+        if g.symbol == symbol and g.timestamp >= twenty_four_hours_ago
+    ]
+    
+    # 시간순으로 정렬 (오래된 것부터)
+    symbol_gaps.sort(key=lambda x: x.timestamp)
+    
+    return jsonify([asdict(g) for g in symbol_gaps])
 
 @app.route('/api/statistics/<symbol>')
 def get_statistics(symbol: str):
