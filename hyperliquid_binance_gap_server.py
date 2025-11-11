@@ -319,9 +319,21 @@ from flask_cors import CORS
 import threading
 
 # 템플릿 경로 설정 (Vercel 환경 고려)
-template_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templates')
-if not os.path.exists(template_dir):
-    # Vercel 환경에서는 상대 경로 사용
+template_dir = None
+possible_paths = [
+    os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templates'),
+    'templates',
+    os.path.join(os.getcwd(), 'templates'),
+    '/var/task/templates',  # Vercel Lambda 경로
+]
+
+for path in possible_paths:
+    if os.path.exists(path):
+        template_dir = path
+        break
+
+if template_dir is None:
+    # 기본값 사용
     template_dir = 'templates'
 
 app = Flask(__name__, template_folder=template_dir)
