@@ -318,7 +318,13 @@ from flask import Flask, jsonify, render_template, request
 from flask_cors import CORS
 import threading
 
-app = Flask(__name__)
+# 템플릿 경로 설정 (Vercel 환경 고려)
+template_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templates')
+if not os.path.exists(template_dir):
+    # Vercel 환경에서는 상대 경로 사용
+    template_dir = 'templates'
+
+app = Flask(__name__, template_folder=template_dir)
 CORS(app)
 
 # 전역 모니터 인스턴스
