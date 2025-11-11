@@ -1,6 +1,7 @@
 """
 Vercel 서버리스 함수
 Flask 앱을 Vercel 서버리스 함수로 래핑
+Vercel Python 런타임은 Flask 앱을 자동으로 감지합니다
 """
 
 import sys
@@ -15,23 +16,8 @@ if project_root not in sys.path:
 os.environ['VERCEL'] = '1'
 os.environ['DISABLE_BACKGROUND_MONITOR'] = '1'
 
-# Flask 앱 import (에러 발생 시 상세 정보 표시)
-try:
-    from hyperliquid_binance_gap_server import app
-    print("✅ Flask app imported successfully", file=sys.stderr)
-except Exception as e:
-    import traceback
-    error_msg = f"❌ Import failed: {str(e)}\n\n{traceback.format_exc()}"
-    print(error_msg, file=sys.stderr)
-    
-    # 에러 핸들러 Flask 앱 생성
-    from flask import Flask
-    app = Flask(__name__)
-    
-    @app.route('/')
-    def error():
-        return f"<h1>Application Error</h1><pre>{error_msg}</pre>", 500
-    
-    @app.route('/api/<path:path>')
-    def api_error(path):
-        return {"error": str(e), "traceback": traceback.format_exc()}, 500
+# Flask 앱 import
+from hyperliquid_binance_gap_server import app
+
+# Vercel은 Flask 앱 객체를 자동으로 감지합니다
+# app 객체를 그대로 export하면 됩니다
