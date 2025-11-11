@@ -336,6 +336,10 @@ def background_monitor(symbol: str = "MONUSDT"):
     """백그라운드 모니터링 스레드"""
     global latest_gap_data, monitoring_active
     
+    # Vercel 환경에서는 실행하지 않음
+    if os.environ.get('VERCEL') == '1' or os.environ.get('DISABLE_BACKGROUND_MONITOR') == '1':
+        return
+    
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
     
@@ -418,6 +422,14 @@ def get_statistics(symbol: str):
 def start_monitoring(symbol: str):
     """모니터링 시작"""
     global monitoring_active
+    
+    # Vercel 환경에서는 백그라운드 스레드 시작하지 않음
+    if os.environ.get('VERCEL') == '1' or os.environ.get('DISABLE_BACKGROUND_MONITOR') == '1':
+        return jsonify({
+            'status': 'serverless_mode',
+            'symbol': symbol,
+            'message': 'Vercel serverless mode: data fetched on request'
+        })
     
     if not monitoring_active:
         monitor_thread = threading.Thread(target=background_monitor, args=(symbol,), daemon=True)
