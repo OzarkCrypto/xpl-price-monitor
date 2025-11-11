@@ -1,0 +1,14 @@
+*.pyc
+__pycache__/
+*.db
+*.log
+*.pid
+.env
+venv/
+.venv/
+gap_monitor.pid
+gap_monitor_daemon.log
+ngrok
+ngrok.pid
+.DS_Store
+

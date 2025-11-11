@@ -15,22 +15,38 @@ if project_root not in sys.path:
 os.environ['VERCEL'] = '1'
 os.environ['DISABLE_BACKGROUND_MONITOR'] = '1'
 
+# Flask 앱 import
 try:
-    # Flask 앱 import
     from hyperliquid_binance_gap_server import app
-    
-    # Vercel은 Flask 앱을 자동으로 감지합니다
-    # app 객체를 그대로 export하면 됩니다
-    
-except Exception as e:
-    # 에러 발생 시 간단한 에러 핸들러
+except ImportError as e:
+    # Import 실패 시 에러 핸들러
     from flask import Flask
+    import traceback
+    
     app = Flask(__name__)
+    
+    error_details = f"Import Error: {str(e)}\n\n{traceback.format_exc()}"
     
     @app.route('/')
     def error():
-        return f"Error loading app: {str(e)}", 500
+        return f"<pre>{error_details}</pre>", 500
     
     @app.route('/api/<path:path>')
     def api_error(path):
-        return f"Error loading app: {str(e)}", 500
+        return f"<pre>{error_details}</pre>", 500
+except Exception as e:
+    # 기타 에러
+    from flask import Flask
+    import traceback
+    
+    app = Flask(__name__)
+    
+    error_details = f"Error: {str(e)}\n\n{traceback.format_exc()}"
+    
+    @app.route('/')
+    def error():
+        return f"<pre>{error_details}</pre>", 500
+    
+    @app.route('/api/<path:path>')
+    def api_error(path):
+        return f"<pre>{error_details}</pre>", 500
