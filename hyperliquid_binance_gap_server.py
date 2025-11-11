@@ -353,6 +353,26 @@ def index():
 @app.route('/api/gap/<symbol>')
 def get_gap(symbol: str):
     """가격 갭 데이터 API"""
+    # Vercel 환경에서는 요청 시마다 데이터를 가져옴
+    if os.environ.get('VERCEL') == '1' or os.environ.get('DISABLE_BACKGROUND_MONITOR') == '1':
+        # 서버리스 환경: 요청 시마다 실시간 데이터 가져오기
+        import asyncio
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+        gap_data = loop.run_until_complete(monitor.monitor_symbol(symbol))
+        loop.close()
+        
+        if gap_data:
+            stats = monitor.get_statistics(symbol)
+            return jsonify({
+                'gap': asdict(gap_data),
+                'statistics': stats,
+                'timestamp': time.time()
+            })
+        else:
+            return jsonify({'error': 'Failed to fetch data'}), 500
+    
+    # 일반 환경: 캐시된 데이터 사용
     if symbol in latest_gap_data:
         gap_data = latest_gap_data[symbol]
         stats = monitor.get_statistics(symbol)
@@ -401,9 +421,11 @@ def start_monitoring(symbol: str):
         return jsonify({'status': 'already_running', 'symbol': symbol})
 
 if __name__ == '__main__':
-    # 기본 모니터링 시작 (MONUSDT)
-    monitor_thread = threading.Thread(target=background_monitor, args=("MONUSDT",), daemon=True)
-    monitor_thread.start()
+    # Vercel 환경이 아닐 때만 백그라운드 모니터링 시작
+    if os.environ.get('DISABLE_BACKGROUND_MONITOR') != '1':
+        # 기본 모니터링 시작 (MONUSDT)
+        monitor_thread = threading.Thread(target=background_monitor, args=("MONUSDT",), daemon=True)
+        monitor_thread.start()
     
     # Flask 서버 시작
     # 환경 변수에서 포트 가져오기 (클라우드 배포용)
